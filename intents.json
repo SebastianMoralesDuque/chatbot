@@ -1,0 +1,735 @@
+{
+  "intents": [
+    {
+"tag": "saludo",
+"patterns": [
+"Hola",
+"¿Cómo estás?",
+"Buenos días"
+],
+"responses": [
+"¡Hola! Soy un asistente de salud mental, ¿en qué puedo ayudarte?",
+"¡Hola! Estoy aquí para ayudarte en lo que necesites.",
+  "¡Hola! ¿En qué puedo ayudarte?"
+],
+"followup_responses": [
+{
+"in_context": "pregunta_estres",
+"response": "Entiendo que el estrés puede ser abrumador. ¿Te gustaría que te proporcione algunos consejos para manejarlo?"
+},
+{
+"in_context": "pregunta_ansiedad",
+"response": "La ansiedad puede ser muy difícil de manejar. ¿Quieres que hablemos más sobre esto?"
+},
+{
+"in_context": "pregunta_depresion",
+"response": "La depresión es una enfermedad que afecta a muchas personas. ¿Te gustaría hablar sobre cómo te sientes y cómo puedo ayudarte?"
+}
+]
+},
+    {
+      "tag": "despedida",
+      "patterns": [
+        "Adiós",
+        "Hasta luego",
+        "Nos vemos pronto"
+      ],
+      "responses": [
+        "¡Cuídate!",
+        "¡Hasta luego!",
+        "Si necesitas algo más, no dudes en volver."
+      ]
+    },
+   {
+  "tag": "ansiedad",
+  "patterns": [
+    "¿Cómo puedo controlar mi ansiedad?",
+    "Estoy teniendo ansiedad",
+    "¿Qué puedo hacer para reducir la ansiedad?",
+    "Me siento ansioso"
+  ],
+  "responses": [
+    "Sé que la ansiedad puede ser difícil de manejar, pero estoy aquí para ayudarte. ¿Qué cosas te han ayudado en el pasado a lidiar con la ansiedad?",
+    "La ansiedad es una respuesta natural del cuerpo al estrés, pero si estás teniendo dificultades para controlarla, podemos trabajar juntos en algunas técnicas de relajación que te ayuden a reducir la ansiedad.",
+    "Es normal sentirse ansioso en ciertas situaciones, pero si la ansiedad está interfiriendo con tu vida diaria, podrías beneficiarte de hablar con un profesional de la salud mental. ¿Te gustaría que te recomiende algún especialista cercano a ti?",
+    "La ansiedad puede ser desafiante, pero hay muchas herramientas y estrategias que pueden ayudarte a controlarla. ¿Te gustaría que te proporcione algunos recursos útiles para manejar la ansiedad?"
+  ],
+  "followup_responses": [
+    {
+      "tag": "ansiedad-técnicas",
+      "patterns": [
+        "Sí, por favor dime más sobre técnicas de relajación",
+        "¿Qué técnicas de relajación puedo usar para reducir la ansiedad?"
+      ],
+      "responses": [
+        "Claro, algunas técnicas que podrías probar incluyen la respiración profunda, la meditación, el yoga, y la relajación muscular progresiva. ¿Te gustaría que te proporcione más información sobre alguna de estas técnicas?",
+        "Existen muchas técnicas de relajación que pueden ayudarte a reducir la ansiedad. ¿Te gustaría que te brinde información sobre alguna técnica en particular?"
+      ]
+    },
+    {
+      "tag": "ansiedad-situaciones",
+      "patterns": [
+        "Mi ansiedad se desencadena en situaciones específicas",
+        "¿Qué puedo hacer si mi ansiedad se desencadena en ciertas situaciones?"
+      ],
+      "responses": [
+        "Entiendo que la ansiedad puede desencadenarse en ciertas situaciones. Podríamos trabajar juntos en identificar qué situaciones específicas te causan ansiedad y desarrollar estrategias para enfrentarlas. ¿Te gustaría que te brinde algunos ejemplos de estrategias para manejar la ansiedad en situaciones específicas?",
+        "Si tu ansiedad se desencadena en situaciones específicas, es importante que identifiquemos qué situaciones son esas y qué te causa ansiedad en ellas. Podríamos trabajar juntos en desarrollar estrategias para manejar la ansiedad en esas situaciones. ¿Te gustaría que te brinde algunos ejemplos de estrategias que podrías probar?"
+      ]
+    }
+  ]
+}
+,
+     {
+  "tag": "bipolaridad",
+  "patterns": [
+    "¿Qué es la bipolaridad?",
+    "¿Cómo sé si tengo bipolaridad?",
+    "Síntomas de la bipolaridad",
+    "Tratamiento para la bipolaridad"
+  ],
+  "responses": [
+    "La bipolaridad es un trastorno mental que causa cambios extremos en el estado de ánimo, la energía y la capacidad para funcionar en la vida diaria.",
+    "Si experimentas cambios extremos en el estado de ánimo, desde periodos de euforia y energía excesiva, hasta periodos de tristeza profunda y falta de energía, es posible que tengas bipolaridad. Te recomiendo que acudas a un especialista para una evaluación precisa.",
+    "Los síntomas de la bipolaridad incluyen cambios extremos en el estado de ánimo, desde periodos de euforia y energía excesiva (llamados episodios maníacos), hasta periodos de tristeza profunda y falta de energía (llamados episodios depresivos). También pueden presentarse cambios en los patrones de sueño y alimentación, dificultades para concentrarse y tomar decisiones, y cambios en la actividad sexual.",
+    "El tratamiento para la bipolaridad puede incluir medicamentos, psicoterapia y cambios en el estilo de vida. Es importante que acudas a un especialista para un diagnóstico y tratamiento adecuados."
+  ],
+  "followup_responses": [
+    {
+      "tag": "bipolaridad-tratamiento",
+      "patterns": [
+        "¿Cuáles son los medicamentos que se usan para tratar la bipolaridad?",
+        "¿Qué tipo de psicoterapia es efectiva para la bipolaridad?",
+        "¿Cómo puedo ayudar a un familiar con bipolaridad?"
+      ],
+      "responses": [
+        "Los medicamentos para la bipolaridad suelen ser estabilizadores del ánimo, antipsicóticos y antidepresivos. Sin embargo, la elección del tratamiento depende del tipo y la gravedad de los síntomas, por lo que es importante que consultes a un especialista para un tratamiento adecuado.",
+        "La terapia cognitivo-conductual (TCC) puede ser efectiva en el tratamiento de la bipolaridad, ya que ayuda a identificar y cambiar los patrones de pensamiento y comportamiento negativos. También puede ser útil la terapia interpersonal y la terapia de grupo.",
+        "Si tienes un familiar con bipolaridad, es importante que le brindes apoyo emocional y que te eduques sobre la enfermedad. También es útil que lo acompañes a las citas con el especialista y que lo ayudes a seguir el tratamiento."
+      ]
+    },
+    {
+      "tag": "bipolaridad-autoayuda",
+      "patterns": [
+        "¿Hay algo que pueda hacer para controlar mi bipolaridad?",
+        "¿Cómo puedo ayudar a prevenir los episodios maníacos o depresivos?",
+        "¿Hay algún cambio en el estilo de vida que pueda hacer para mejorar mi bipolaridad?"
+      ],
+      "responses": [
+        "Existen ciertas estrategias de autoayuda que pueden ayudar a controlar la bipolaridad, como llevar un diario de los cambios en el estado de ánimo, establecer una rutina diaria y dormir suficientes horas, hacer ejercicio regularmente, evitar el consumo de drogas y alcohol, y buscar apoyo emocional y social.",
+"Para prevenir los episodios maníacos o depresivos, es importante identificar los factores desencadenantes y evitarlos en la medida de lo posible. Estos factores pueden incluir el estrés, la falta de sueño, el consumo de drogas y alcohol, y ciertos medicamentos.",
+"Realizar cambios en el estilo de vida también puede ser útil para mejorar la bipolaridad, como llevar una alimentación saludable, evitar la cafeína y otros estimulantes, y practicar técnicas de relajación como la meditación y el yoga."
+]
+},
+{
+"tag": "bipolaridad-consejos",
+"patterns": [
+"¿Tienes algún consejo para alguien que acaba de ser diagnosticado con bipolaridad?",
+"¿Qué puedo hacer si estoy teniendo un episodio maníaco o depresivo?",
+"¿Cómo puedo manejar la bipolaridad en el trabajo o en la escuela?"
+],
+"responses": [
+"Si acabas de ser diagnosticado con bipolaridad, es importante que busques información confiable sobre la enfermedad y que te eduques sobre las opciones de tratamiento disponibles. También es útil que te conectes con grupos de apoyo y que te rodees de personas que te brinden un ambiente seguro y de apoyo.",
+"Si estás teniendo un episodio maníaco o depresivo, es importante que contactes a tu especialista de inmediato y que sigas las recomendaciones del tratamiento. También es útil que tengas un plan de seguridad en caso de que experimentes pensamientos suicidas o necesites ayuda de emergencia.",
+"Para manejar la bipolaridad en el trabajo o en la escuela, es importante establecer límites claros y comunicar tus necesidades a tus compañeros y superiores. También es útil que identifiques las actividades y responsabilidades que son más desafiantes para ti y que busques maneras de manejarlas de manera efectiva."
+]
+}
+]
+}
+,
+    {
+  "tag": "depresion-tratamiento",
+  "patterns": [
+    "¿Cuáles son los tratamientos para la depresión?",
+    "¿La terapia puede ayudar con la depresión?",
+    "¿Qué tipo de medicamentos se utilizan para tratar la depresión?"
+  ],
+  "responses": [
+    "El tratamiento para la depresión puede incluir medicamentos antidepresivos, psicoterapia y cambios en el estilo de vida. Es importante que acudas a un profesional de la salud mental para un diagnóstico y tratamiento adecuados.",
+    "La terapia cognitivo-conductual (TCC) y la terapia interpersonal son formas efectivas de psicoterapia para la depresión. Los medicamentos antidepresivos también pueden ser útiles, pero deben ser recetados y supervisados por un médico especialista."
+  ]
+},
+{
+  "tag": "depresion-autoayuda",
+  "patterns": [
+    "¿Hay algo que pueda hacer para sentirme mejor con mi depresión?",
+    "¿Cómo puedo cuidar de mí mismo cuando estoy deprimido?",
+    "¿Qué cambios en el estilo de vida pueden ayudar a aliviar la depresión?"
+  ],
+  "responses": [
+    "La actividad física regular, dormir suficientes horas, tener una alimentación saludable, socializar y participar en actividades que disfrutes pueden ser útiles para aliviar la depresión. Sin embargo, si estás experimentando una depresión severa, es importante que acudas a un profesional de la salud mental para recibir tratamiento adecuado.",
+    "Es importante que te cuides a ti mismo durante la depresión. Trata de establecer una rutina diaria, haz actividades que disfrutes, habla con alguien de confianza y busca apoyo emocional en tus amigos y familiares."
+  ]
+},
+{
+  "tag": "depresion-cuidador",
+  "patterns": [
+    "Mi amigo/familiar tiene depresión, ¿cómo puedo ayudarlo?",
+    "¿Qué puedo hacer para apoyar a alguien con depresión?",
+    "¿Cómo puedo hablar con alguien sobre su depresión?"
+  ],
+  "responses": [
+    "Es importante que brindes apoyo emocional a tu amigo/familiar con depresión. Escucha sin juzgar, ofrece ayuda práctica y anímalos a buscar tratamiento profesional. También es importante que cuides de ti mismo y busques apoyo si te sientes abrumado.",
+    "Hablar sobre la depresión puede ser difícil, pero es importante hacerlo. Trata de ser comprensivo y apoyar a tu amigo/familiar. Pregúntales cómo te pueden ayudar y ofréceles apoyo emocional."
+  ]
+}
+,
+    {
+    "tag": "depresion",
+    "patterns": [
+        "Me siento triste todo el tiempo",
+        "No tengo energía para hacer nada",
+        "No encuentro motivación en mi vida",
+        "Me siento inútil",
+        "No puedo dormir",
+        "No tengo ganas de hacer nada",
+        "Me siento abrumado"
+    ],
+    "responses": [
+        "Parece que estás lidiando con una depresión. ¿Has hablado con un profesional de salud mental al respecto?",
+        "La depresión puede ser muy difícil de manejar. ¿Te gustaría que te ayudara a encontrar recursos para buscar ayuda?",
+        "Entiendo que la depresión puede ser muy difícil de enfrentar. ¿Hay algo en particular que te haya estado molestando últimamente?"
+    ],
+    "followup_responses": [
+        {
+            "tag": "depresion-tratamiento",
+            "patterns": [
+                "¿Cuáles son los tratamientos para la depresión?",
+                "¿Qué medicamentos se usan para tratar la depresión?",
+                "¿Qué tipo de terapia es efectiva para la depresión?"
+            ],
+            "responses": [
+                "Los tratamientos para la depresión pueden incluir medicamentos antidepresivos y psicoterapia, como la terapia cognitivo-conductual (TCC) y la terapia interpersonal. La elección del tratamiento depende del tipo y la gravedad de los síntomas, por lo que es importante que consultes a un profesional de salud mental para un tratamiento adecuado.",
+                "Existen diferentes tipos de antidepresivos que se usan para tratar la depresión, como los inhibidores selectivos de la recaptación de serotonina (ISRS), los inhibidores de la recaptación de serotonina y noradrenalina (IRSN) y los antidepresivos tricíclicos. La elección del medicamento depende del tipo y la gravedad de los síntomas, así como de otros factores, por lo que es importante que consultes a un profesional de salud mental para una evaluación y tratamiento adecuados.",
+                "La terapia cognitivo-conductual (TCC) es un tipo de psicoterapia que se enfoca en identificar y cambiar los patrones de pensamiento y comportamiento negativos que contribuyen a la depresión. La terapia interpersonal, por otro lado, se enfoca en mejorar las relaciones interpersonales y abordar los problemas relacionados con las mismas."
+            ]
+        },
+        {
+            "tag": "depresion-autoayuda",
+            "patterns": [
+                "¿Hay algo que pueda hacer para sentirme mejor?",
+                "¿Cómo puedo lidiar con la depresión por mi cuenta?",
+                "¿Qué cambios en el estilo de vida pueden ayudar a combatir la depresión?"
+            ],
+            "responses": [
+                "Existen algunas estrategias de autoayuda que pueden ayudar a combatir la depresión, como hacer ejercicio regularmente, dormir lo suficiente, alimentarse de manera saludable, hacer actividades que disfrute y establecer una rutina diaria.",
+                "Si bien es importante buscar ayuda profesional para la depresión, también hay algunas cosas que puede hacer por su cuenta para sentirse mejor, como hablar con amigos o familiares de confianza, escribir en un diario para procesar sus sentimientos y pensamientos, practicar técnicas de relajación como la meditación o la respiración profunda y establecer metas alcanzables para sí mismo.",
+"Hacer cambios en su estilo de vida también puede ser beneficioso para combatir la depresión. Esto puede incluir hacer ejercicio regularmente, dormir lo suficiente, evitar el consumo de alcohol y drogas, y buscar actividades que le brinden placer y le permitan conectarse con otras personas."
+]
+},
+{
+"tag": "depresion-sintomas",
+"patterns": [
+"¿Cuáles son los síntomas de la depresión?",
+"¿Cómo sé si tengo depresión?",
+"¿Qué puedo hacer si creo que tengo depresión?"
+],
+"responses": [
+"Los síntomas de la depresión pueden incluir tristeza constante, falta de energía o motivación, dificultad para dormir o dormir demasiado, pérdida de interés en actividades que antes disfrutaba, sentimientos de inutilidad o culpa, dificultad para concentrarse, pensamientos suicidas y cambios en el apetito o el peso corporal.",
+"Si cree que puede tener depresión, es importante buscar ayuda de un profesional de la salud mental para una evaluación adecuada. Puede hablar con su médico de atención primaria o buscar un terapeuta o psiquiatra en su área.",
+"Si cree que tiene depresión, es importante buscar ayuda lo antes posible. Puede hablar con un profesional de la salud mental, buscar grupos de apoyo o hacer cambios en su estilo de vida para ayudar a aliviar sus síntomas. No tiene que enfrentar la depresión solo."
+]
+}
+]
+},
+
+    {
+    "tag": "trastorno-oposicion-desafiante",
+    "patterns": [
+        "Mi hijo no sigue las reglas y siempre me desafía",
+        "Mi hijo es muy rebelde",
+        "Mi hijo no respeta mi autoridad",
+        "Mi hijo siempre se comporta mal",
+        "No sé cómo lidiar con el comportamiento de mi hijo"
+    ],
+    "responses": [
+        "Entiendo que debe ser muy difícil lidiar con el comportamiento de tu hijo. ¿Has considerado hablar con un profesional de salud mental sobre esto?",
+        "El trastorno de oposición desafiante puede ser muy difícil de manejar. ¿Te gustaría que te ayude a encontrar recursos para buscar ayuda profesional?",
+        "Es importante recordar que no estás solo en esto. Muchos padres enfrentan desafíos similares con sus hijos. ¿Te gustaría hablar sobre algunas estrategias que podrían ayudarte a lidiar con el comportamiento de tu hijo?"
+    ],
+    "followup_responses": [
+        {
+            "tag": "trastorno-oposicion-desafiante-sintomas",
+            "patterns": [
+                "¿Cuáles son los síntomas del trastorno de oposición desafiante?",
+                "¿Cómo puedo saber si mi hijo tiene trastorno de oposición desafiante?",
+                "¿Qué comportamientos son típicos de los niños con trastorno de oposición desafiante?"
+            ],
+            "responses": [
+                "Los síntomas del trastorno de oposición desafiante pueden incluir desobediencia, comportamiento desafiante, irritabilidad, enojo, vengatividad, y una tendencia a culpar a otros por sus problemas. Si estás preocupado por el comportamiento de tu hijo, es importante que hables con un profesional de salud mental para una evaluación adecuada.",
+                "Los niños con trastorno de oposición desafiante suelen mostrar comportamientos desafiantes y de oposición con frecuencia y de manera persistente. Si estás preocupado por el comportamiento de tu hijo, es importante que hables con un profesional de salud mental para una evaluación adecuada.",
+                "Los niños con trastorno de oposición desafiante suelen mostrar comportamientos como desobediencia, negativismo, discutir con adultos, incumplir las reglas, molestar a otros de forma deliberada, culpar a otros por sus errores y ser fácilmente molestados o enojados. Si estás preocupado por el comportamiento de tu hijo, es importante que hables con un profesional de salud mental para una evaluación adecuada."
+            ]
+        },
+        {
+            "tag": "trastorno-oposicion-desafiante-tratamiento",
+            "patterns": [
+                "¿Cómo se trata el trastorno de oposición desafiante?",
+                "¿Qué tipo de terapia puede ayudar a mi hijo con trastorno de oposición desafiante?",
+                "¿Qué papel juegan los padres en el tratamiento del trastorno de oposición desafiante?"
+            ],
+            "responses": [
+                "El tratamiento del trastorno de oposición desafiante puede incluir terapia cognitivo-conductual, terapia de habilidades parentales y terapia familiar. También puede ser útil trabajar con un médico para abordar cualquier problema de salud mental ocomportamiento coexistente que pueda estar afectando a tu hijo. Es importante trabajar en colaboración con un profesional de salud mental para diseñar un plan de tratamiento individualizado para tu hijo.",
+"La terapia cognitivo-conductual y la terapia de habilidades parentales son dos tipos de terapia que pueden ser efectivas en el tratamiento del trastorno de oposición desafiante. La terapia cognitivo-conductual se enfoca en enseñar a los niños estrategias para manejar sus emociones y comportamientos, mientras que la terapia de habilidades parentales se enfoca en enseñar a los padres técnicas efectivas para manejar el comportamiento de sus hijos. Es importante trabajar en colaboración con un profesional de salud mental para diseñar un plan de tratamiento individualizado para tu hijo.",
+"Los padres tienen un papel fundamental en el tratamiento del trastorno de oposición desafiante. La terapia de habilidades parentales puede ayudar a los padres a aprender estrategias efectivas para manejar el comportamiento de sus hijos, mejorar la comunicación y fortalecer la relación con sus hijos. También es importante trabajar en colaboración con un profesional de salud mental para diseñar un plan de tratamiento individualizado para tu hijo."
+]
+}
+]
+}
+
+,
+      {
+    "tag": "trastorno_conducta",
+    "patterns": [
+        "Mi hijo siempre desobedece",
+        "Mi hija tiene problemas de conducta en la escuela",
+        "Mi hijo tiene dificultades para seguir las normas",
+        "Mi hija no muestra ningún respeto por las figuras de autoridad"
+    ],
+    "responses": [
+        "Entiendo que tu hijo tenga problemas de conducta. A veces, es difícil para los niños seguir las reglas y normas establecidas. ¿Podrías darme más detalles sobre la situación de tu hijo? ¿Qué tipo de problemas de conducta presenta? ¿Has intentado hablar con él para saber qué le está sucediendo?",
+        "La conducta de los niños puede ser influenciada por muchos factores, incluyendo la familia, los amigos y el entorno escolar. ¿Has intentado hablar con los maestros de tu hijo para ver si hay algo que pueda estar afectando su comportamiento en la escuela?",
+        "El Trastorno de Conducta es una condición que puede requerir tratamiento profesional. ¿Has considerado buscar ayuda de un psicólogo o un terapeuta? Estos profesionales pueden trabajar contigo y con tu hijo para ayudarle a manejar su conducta y desarrollar habilidades sociales y emocionales saludables."
+    ]
+}
+      ,
+      {
+    "tag": "tdah",
+    "patterns": [
+        "¿Qué es el TDAH?",
+        "¿Cómo se trata el TDAH?",
+        "¿Cuáles son los síntomas del TDAH?",
+        "¿Qué hacer si mi hijo tiene TDAH?",
+        "¿Cómo puedo ayudar a alguien con TDAH?"
+    ],
+    "responses": [
+        "El TDAH es un trastorno neurológico que se caracteriza por falta de atención, hiperactividad e impulsividad. El tratamiento suele incluir medicación y terapia conductual.",
+        "El tratamiento para el TDAH puede incluir medicamentos estimulantes, terapia conductual y cambios en el estilo de vida. Es importante hablar con un médico para determinar el mejor plan de tratamiento para cada persona.",
+        "Los síntomas del TDAH incluyen falta de atención, hiperactividad e impulsividad. Estos síntomas pueden afectar el rendimiento académico, la vida social y laboral.",
+        "Si sospechas que tu hijo tiene TDAH, es importante buscar la opinión de un profesional de la salud mental. Un médico o psicólogo puede evaluar los síntomas y determinar si es necesario un tratamiento.",
+        "Si conoces a alguien con TDAH, es importante ser comprensivo y brindar apoyo. Puedes ofrecer ayuda en tareas que requieren concentración, ayudar a establecer rutinas y ofrecer un ambiente tranquilo y estructurado."
+    ]
+}
+,
+      {
+  "tag": "TEPT",
+  "patterns": [
+    "¿Cómo puedo manejar mi trastorno por estrés postraumático?",
+    "Siento que mi trastorno por estrés postraumático está fuera de control",
+    "¿Qué terapias son efectivas para tratar el trastorno por estrés postraumático?",
+    "¿Cómo puedo ayudar a un amigo con trastorno por estrés postraumático?",
+    "He experimentado un evento traumático recientemente y creo que estoy desarrollando trastorno por estrés postraumático. ¿Qué debo hacer?",
+    "Siento que el trastorno por estrés postraumático me está consumiendo. ¿Cómo puedo manejarlo mejor?",
+    "¿Cuáles son algunos síntomas comunes del trastorno por estrés postraumático?",
+    "¿Puede el trastorno por estrés postraumático ser tratado exitosamente?",
+    "No puedo superar el trauma que experimenté. ¿Cómo puedo obtener ayuda para mi trastorno por estrés postraumático?",
+        "He tenido flashbacks de un evento traumático reciente.",
+        "Siento que el evento traumático me persigue.",
+        "No puedo dejar de pensar en el evento traumático."
+  ],
+  "responses": [
+    "El trastorno por estrés postraumático es un trastorno psiquiátrico que puede ser tratado con terapia y medicación. Algunas terapias efectivas incluyen la terapia de exposición prolongada y la terapia cognitivo-conductual. También es importante cuidar de uno mismo y mantener hábitos saludables de sueño, dieta y ejercicio.",
+    "Es común sentir que el trastorno por estrés postraumático está fuera de control, pero hay muchas opciones de tratamiento disponibles. Si está luchando con su trastorno por estrés postraumático, es importante hablar con un profesional de la salud mental para obtener ayuda.",
+    "Las terapias más efectivas para el trastorno por estrés postraumático incluyen la terapia de exposición prolongada, la terapia cognitivo-conductual y la terapia EMDR. La medicación también puede ser útil en algunos casos.",
+    "Si tiene un amigo que está luchando con el trastorno por estrés postraumático, lo mejor que puede hacer es ofrecer su apoyo y aliento para que busque tratamiento. También puede buscar recursos y terapeutas especializados en trastorno por estrés postraumático para ayudar a su amigo a encontrar la ayuda que necesita.",
+    "Si cree que está experimentando trastorno por estrés postraumático, es importante buscar ayuda de un profesional de la salud mental lo antes posible. Hay muchas opciones de tratamiento disponibles y obtener ayuda temprano puede ayudar a prevenir la progresión del trastorno.",
+    "Hay varias formas en que puede manejar su trastorno por estrés postraumático, como buscar terapia, practicar técnicas de relajación y meditación, y encontrar formas de cuidar su bienestar físico y emocional.",
+    "Los síntomas comunes del trastorno por estrés postraumático incluyen flashbacks, evitación de situaciones relacionadas con el trauma, pesadillas, irritabilidad y ansiedad. Es importante buscar ayuda si experimenta estos síntomas.",
+   "Es normal tener flashbacks después de haber pasado por un evento traumático, pero es importante que hables de ello con un profesional para poder manejarlo mejor.",
+        "El TEPT es un trastorno muy común en personas que han pasado por eventos traumáticos. Te recomiendo buscar ayuda profesional para poder superarlo.",
+        "Es importante que no te sientas sola/o después de haber pasado por un evento traumático. Te recomiendo buscar ayuda profesional para poder manejarlo de la mejor manera posible."
+   ]
+}
+,
+      {
+    "tag": "antisocial",
+    "patterns": [
+        "No me importa lo que piense la gente",
+        "No tengo interés en las normas sociales",
+        "Prefiero estar solo la mayoría del tiempo",
+        "La gente me describe como frío o insensible",
+        "No siento remordimiento por mis acciones"
+    ],
+    "responses": [
+        "¿Has considerado que esto puede tener un impacto negativo en tus relaciones personales y profesionales?",
+        "A veces puede ser difícil ver el valor en las relaciones interpersonales, pero es importante tener en cuenta que estas conexiones pueden brindar muchas oportunidades y beneficios",
+        "Entiendo que a veces puede ser agotador mantener relaciones sociales, pero es importante tener un apoyo emocional en momentos difíciles",
+        "¿Te sientes cómodo hablando más sobre esto? Podemos trabajar juntos para explorar maneras de mejorar tus relaciones y conectar con los demás de manera más efectiva"
+    ]
+}
+,
+      {
+    "tag": "asocial",
+    "patterns": [
+        "No me gusta socializar con otras personas",
+        "Prefiero estar solo la mayor parte del tiempo",
+        "No me siento cómodo en reuniones sociales",
+        "No me importa si no tengo amigos",
+        "Las relaciones sociales me cansan mucho",
+        "No veo la necesidad de socializar",
+        "Suelo evitar interacciones sociales",
+        "Siento que no encajo en ningún grupo social",
+        "A veces me siento incómodo en situaciones sociales",
+        "Soy muy selectivo con mis amistades"
+    ],
+    "responses": [
+        "Entiendo que prefieras estar solo, pero es importante tener interacciones sociales para nuestro bienestar emocional. ¿Has considerado alguna vez participar en actividades que te gusten para conocer personas con intereses similares?",
+        "Es normal sentirse incómodo en situaciones sociales, pero la práctica hace al maestro. ¿Qué te parece si intentas salir de tu zona de confort poco a poco?",
+        "Las relaciones sociales pueden ser agotadoras, pero también pueden ser muy gratificantes. ¿Has considerado intentarlo?",
+        "Es comprensible que no quieras socializar, pero recuerda que los seres humanos somos seres sociales por naturaleza. ¿Te gustaría hablar más sobre cómo te sientes con respecto a la socialización?",
+        "Sé que puede ser difícil encontrar personas con las que te sientas cómodo socializando, pero no te rindas. Quizás en el futuro encuentres a alguien que tenga intereses similares a los tuyos y puedan conectarse."
+    ]
+}
+,
+      {
+  "tag": "narcisista",
+  "patterns": [
+    "¿Qué pasa si soy increíblemente arrogante?",
+    "Siento que siempre tengo razón",
+    "¿Por qué la gente no me da suficiente atención?",
+    "¿Cómo puedo ser más exitoso que todos los demás?"
+  ],
+  "responses": [
+    "Entiendo que te sientas de esta manera, pero es importante tener en cuenta que la humildad y la empatía son cualidades muy valiosas en las relaciones interpersonales. ¿Te gustaría hablar más sobre cómo puedes trabajar en estas áreas?",
+    "Ser humilde y mostrar interés genuino en los demás puede ayudarte a establecer conexiones más significativas en tu vida. ¿Te gustaría hablar más sobre cómo puedes trabajar en estas áreas?",
+    "Es posible que desees considerar por qué sientes que necesitas la atención de los demás de esta manera. ¿Te gustaría hablar más sobre cómo puedes trabajar en tu autoestima y tu sentido de valía?",
+    "Es comprensible querer tener éxito, pero es importante tener en cuenta cómo tus acciones afectan a los demás y asegurarte de que no estás perjudicando a otros para lograr tus objetivos. ¿Te gustaría hablar más sobre cómo puedes trabajar en ser un líder exitoso y compasivo?"
+  ]
+}
+      ,
+      {
+    "tag": "esquizofrenia",
+    "patterns": [
+        "¿Qué es la esquizofrenia?",
+        "Síntomas de la esquizofrenia",
+        "Tratamiento para la esquizofrenia",
+        "¿Cómo se diagnostica la esquizofrenia?",
+        "¿Cuáles son las causas de la esquizofrenia?"
+    ],
+    "responses": [
+        "La esquizofrenia es un trastorno mental grave que afecta la forma en que una persona piensa, siente y se comporta. Algunos de los síntomas incluyen delirios, alucinaciones, pensamiento desorganizado, comportamiento desorganizado, falta de motivación y emociones planas. El tratamiento puede incluir terapia, medicamentos y apoyo social.",
+        "Los síntomas de la esquizofrenia pueden variar, pero pueden incluir delirios, alucinaciones, pensamiento desorganizado, comportamiento desorganizado, falta de motivación y emociones planas. Es importante buscar tratamiento si experimentas alguno de estos síntomas o si alguien cercano a ti los experimenta.",
+        "El tratamiento para la esquizofrenia puede incluir terapia, medicamentos y apoyo social. La terapia puede ayudar a la persona a aprender habilidades para manejar los síntomas y el estrés. Los medicamentos pueden ayudar a controlar los síntomas. El apoyo social puede ayudar a la persona a sentirse más conectada y menos aislada.",
+        "El diagnóstico de la esquizofrenia se basa en una evaluación completa de los síntomas y la historia clínica. Es posible que se necesiten pruebas médicas para descartar otras causas de los síntomas.",
+        "No se conoce una sola causa de la esquizofrenia. Se cree que hay varios factores que pueden contribuir, como la genética, el medio ambiente y los cambios en el cerebro y la química cerebral."
+    ]
+}
+,
+      {
+    "tag": "trastorno_limite_personalidad",
+    "patterns": [
+        "¿Qué es el trastorno límite de la personalidad?",
+        "¿Cuáles son los síntomas del trastorno límite de la personalidad?",
+        "¿Cómo se trata el trastorno límite de la personalidad?",
+        "¿Cuál es la causa del trastorno límite de la personalidad?"
+    ],
+    "responses": [
+        "El trastorno límite de la personalidad es un trastorno mental que se caracteriza por una gran inestabilidad emocional, relaciones interpersonales inestables y una autoimagen distorsionada. Los síntomas incluyen cambios de humor intensos y frecuentes, impulsividad, miedo al abandono y una sensación de vacío. El tratamiento suele incluir terapia psicológica y medicación.",
+        "Algunos síntomas del trastorno límite de la personalidad incluyen cambios de humor intensos y frecuentes, miedo al abandono, relaciones interpersonales inestables, impulsividad y una autoimagen distorsionada. Si crees que puedes tener este trastorno, es importante que hables con un profesional de la salud mental.",
+        "El tratamiento para el trastorno límite de la personalidad suele incluir terapia psicológica, como la terapia cognitivo-conductual, la terapia dialéctica conductual y la terapia de esquemas. La medicación también puede ser útil para algunos síntomas.",
+        "La causa exacta del trastorno límite de la personalidad no se conoce completamente, pero se cree que hay una combinación de factores genéticos, biológicos y ambientales que pueden contribuir a su desarrollo."
+    ]
+}
+,
+      {
+    "tag": "dependencia emocional",
+    "patterns": [
+        "¿Cómo puedo dejar de depender tanto de mi pareja?",
+        "No puedo vivir sin mi pareja, ¿qué puedo hacer?",
+        "Siento que no soy nada sin mi pareja, ¿cómo supero esto?",
+        "Si mi pareja se va, no sé qué haré con mi vida, ¿cómo puedo cambiar esto?",
+        "Siento que necesito a mi pareja para ser feliz, ¿qué puedo hacer para cambiar esto?",
+        "¿Cómo puedo aprender a ser más independiente emocionalmente?",
+        "Siento que mi pareja me controla y me hace sentir dependiente, ¿qué puedo hacer?",
+        "¿Cómo puedo dejar de sentirme tan apegado/a emocionalmente a mi pareja?",
+        "Siento que siempre necesito la aprobación de mi pareja, ¿cómo puedo cambiar esto?"
+    ],
+    "responses": [
+        "Es importante que aprendas a valorarte a ti mismo/a y a encontrar tu felicidad en ti mismo/a, en lugar de depender de alguien más. Puedes empezar trabajando en tus pasatiempos, hobbies y en tus amistades para no sentirte tan dependiente de tu pareja.",
+        "La dependencia emocional puede ser un problema serio en una relación. Trata de hablar con tu pareja sobre cómo te sientes y busca ayuda profesional si es necesario para aprender a ser más independiente emocionalmente.",
+        "Recuerda que la felicidad no depende de otra persona. Aprende a ser feliz contigo mismo/a y busca ayuda profesional si necesitas superar la dependencia emocional.",
+        "La dependencia emocional puede ser superada con trabajo y esfuerzo. Busca ayuda profesional para aprender a ser más independiente emocionalmente y trabajar en tu autoestima.",
+        "Es importante que aprendas a encontrar tu felicidad en ti mismo/a, en lugar de depender de alguien más. Trata de dedicar tiempo a tus hobbies y a hacer cosas que te gusten para no sentirte tan dependiente de tu pareja."
+    ]
+}
+,
+      {
+  "tag": "histriónico",
+  "patterns": [
+    "Me siento incomprendido/a",
+    "Nadie me presta la atención que merezco",
+    "Siento que no soy importante para nadie",
+    "Me gusta ser el centro de atención",
+    "Quiero que todo el mundo me admire",
+    "Me siento triste cuando no me prestan atención",
+    "No soporto estar sola/o",
+    "Me siento aburrido/a si no tengo a alguien cerca"
+  ],
+  "responses": [
+    "¿Te sientes mal cuando no te prestan atención? ¿Crees que necesitas ser el centro de atención para sentirte bien contigo mismo/a?",
+    "¿Te has planteado por qué sientes que necesitas que los demás te admiren constantemente? ¿Sientes que eso te hace sentir mejor contigo mismo/a?",
+    "Entiendo que sientas que no eres importante para nadie. ¿Te gustaría trabajar en mejorar tu autoestima y tu confianza en ti mismo/a?",
+    "¿Has pensado en buscar actividades que te hagan sentir bien contigo mismo/a sin necesidad de que otros te presten atención?",
+    "¿Te sientes mal cuando estás solo/a? ¿Te gustaría aprender a disfrutar de tu propia compañía?",
+    "Es importante que aprendas a valorarte a ti mismo/a sin necesidad de que otros te presten atención constantemente. ¿Te gustaría trabajar en eso?",
+    "¿Sientes que necesitas constantemente la atención de los demás para sentirte bien contigo mismo/a? ¿Te gustaría trabajar en desarrollar una autoestima más sólida?",
+    "¿Te has planteado que buscar constantemente la atención de los demás puede ser una forma de evitar enfrentar tus propias inseguridades y miedos? ¿Te gustaría trabajar en eso?"
+  ]
+}
+,
+      {
+  "tag": "pánico",
+  "patterns": [
+    "tengo ataques de pánico",
+    "me da miedo tener otro ataque de pánico",
+    "siento que me ahogo durante un ataque de pánico",
+    "me duele el pecho durante un ataque de pánico",
+    "tengo miedo a los lugares cerrados",
+    "tengo miedo a las multitudes",
+    "siento que pierdo el control durante un ataque de pánico"
+  ],
+  "responses": [
+    "Los ataques de pánico pueden ser aterradores, pero es importante recordar que no son peligrosos y no duran para siempre. ¿Podrías contarme más sobre lo que sientes durante un ataque de pánico?",
+    "Puedo sugerirte algunas técnicas de respiración y relajación que pueden ayudarte durante un ataque de pánico. ¿Te gustaría probarlas?",
+    "Si los ataques de pánico están afectando tu vida diaria, es importante buscar ayuda profesional. ¿Te gustaría que te recomiende un terapeuta cercano a ti?",
+    "El miedo a tener otro ataque de pánico es común, pero tratar de evitar situaciones desencadenantes puede hacer que la ansiedad empeore a largo plazo. ¿Has considerado hablar con un profesional sobre cómo superar ese miedo?"
+  ]
+}
+,
+      {
+    "tag": "comportamiento_alimentario",
+    "patterns": [
+        "Tengo problemas con mi alimentación",
+        "No puedo dejar de comer",
+        "Me siento atraído/a por la comida chatarra",
+        "No me gusta mi cuerpo",
+        "Quiero perder/ganar peso"
+    ],
+    "responses": [
+        "Entiendo que la alimentación puede ser un tema complejo para muchas personas. ¿Podrías contarme más sobre tus hábitos alimentarios y cómo te hacen sentir?",
+        "La relación que tenemos con la comida puede ser complicada. ¿Has considerado hablar con un profesional de la salud sobre tu alimentación?",
+        "Hay muchas formas de abordar un comportamiento alimentario que no te hace sentir bien. ¿Te gustaría hablar sobre algunas estrategias que podrían ayudarte?",
+        "A veces, el deseo de cambiar nuestro cuerpo puede ser muy fuerte. ¿Has pensado en hablar con un experto en nutrición sobre cómo alcanzar tus objetivos de manera saludable?",
+        "No estás solo/a en tu lucha con la alimentación. ¿Quieres que te proporcione algunos recursos que podrían ser útiles para ti?"
+    ]
+}
+,
+      {
+  "tag": "comportamiento_disruptivo_orientado_a_si_mismo",
+  "patterns": [
+    "Siento que mi comportamiento puede ser disruptivo y afectar mis relaciones interpersonales.",
+    "A veces me comporto de manera impulsiva y siento que no puedo controlarlo.",
+    "Me preocupa que mi comportamiento esté afectando mi trabajo/estudios/vida social.",
+    "Siento que necesito ayuda para manejar mi comportamiento y mejorar mis relaciones interpersonales."
+  ],
+  "responses": [
+    "Entiendo cómo te sientes. ¿Has considerado buscar ayuda profesional para abordar este problema? Un terapeuta o consejero puede ayudarte a aprender estrategias para manejar tus impulsos y mejorar tus relaciones interpersonales.",
+    "Es bueno que reconozcas que tu comportamiento puede estar afectando tus relaciones. ¿Has intentado trabajar en identificar qué te motiva a actuar de manera impulsiva y buscar formas de controlar tus impulsos?",
+    "La terapia cognitivo-conductual puede ser efectiva en el tratamiento de comportamientos disruptivos. ¿Has considerado esta opción?",
+    "Es importante buscar ayuda si sientes que tu comportamiento está afectando tu calidad de vida y relaciones interpersonales. Un profesional de la salud mental puede ayudarte a encontrar maneras de controlar tus impulsos y mejorar tus relaciones."
+  ]
+}
+,
+      {
+  "tag": "neurodesarrollo",
+  "patterns": [
+    "¿Qué es el neurodesarrollo?",
+    "¿En qué se enfoca el neurodesarrollo?",
+    "¿Cómo afecta el neurodesarrollo en el desarrollo infantil?",
+    "¿Qué trastornos del neurodesarrollo existen?",
+    "¿Cómo se puede detectar un trastorno del neurodesarrollo?",
+    "¿Qué tratamientos existen para los trastornos del neurodesarrollo?"
+  ],
+  "responses": [
+    "El neurodesarrollo es el proceso en el que el cerebro y el sistema nervioso se desarrollan desde la concepción hasta la adultez.",
+    "El neurodesarrollo se enfoca en el estudio del desarrollo del cerebro y del sistema nervioso, y cómo esto influye en el desarrollo infantil.",
+    "El neurodesarrollo puede afectar en el desarrollo infantil en áreas como el lenguaje, la comunicación, la socialización, el aprendizaje y la conducta.",
+    "Existen diversos trastornos del neurodesarrollo, como el trastorno del espectro autista, el trastorno por déficit de atención e hiperactividad, el trastorno del lenguaje, entre otros.",
+    "Los trastornos del neurodesarrollo pueden ser detectados a través de evaluaciones clínicas, pruebas neuropsicológicas, observaciones y entrevistas con padres y cuidadores.",
+    "El tratamiento para los trastornos del neurodesarrollo puede incluir terapia ocupacional, terapia del habla, terapia conductual, medicación, entre otros. Es importante buscar ayuda profesional para determinar el tratamiento adecuado para cada caso."
+  ]
+}
+,
+      {
+  "tag": "somáticos",
+  "patterns": [
+    "Tengo dolores de cabeza constantes",
+    "Siento dolor en el estómago",
+    "Siento mareos frecuentes",
+    "Tengo problemas para dormir",
+    "Siento dolor en las articulaciones"
+  ],
+  "responses": [
+    "Es importante que acudas a un médico para descartar posibles problemas de salud. Además, en muchos casos, los síntomas físicos pueden estar relacionados con situaciones de estrés o ansiedad. ¿Te gustaría hablar más sobre cómo te sientes emocionalmente?",
+    "¿Has hablado con un médico acerca de estos síntomas? Sería recomendable que lo hicieras para que puedas recibir un diagnóstico adecuado. También es importante considerar la posibilidad de que los síntomas estén relacionados con tus emociones o pensamientos. ¿Te gustaría hablar más al respecto?"
+  ]
+}
+,
+      {
+    "tag": "disforia_genero",
+    "patterns": [
+        "No me siento cómodo con mi género",
+        "Siento que mi género no coincide con mi identidad",
+        "No sé cómo lidiar con mi disforia de género",
+        "¿Cómo puedo lidiar con la disforia de género?",
+        "¿Cómo puedo aceptar mi cuerpo si no me siento cómodo con mi género?"
+    ],
+    "responses": [
+        "Entiendo que esto puede ser muy difícil para ti. No estás solo en esto. ¿Te gustaría hablar sobre cómo te sientes y cómo podrías lidiar con estos sentimientos?",
+        "La disforia de género es un tema complejo y es normal sentirse abrumado. Podemos hablar sobre tus sentimientos y buscar formas de ayudarte a sentirte más cómodo en tu cuerpo.",
+        "Reconocer que algo no se siente bien es el primer paso para hacer algo al respecto. Podemos trabajar juntos para encontrar formas de ayudarte a sentirte más cómodo en tu género."
+    ]
+}
+      ,
+
+          {
+  "tag": "adicciones",
+  "patterns": [
+    "¿Cómo puedo dejar de consumir drogas?",
+    "Quiero dejar de fumar, ¿qué puedo hacer?",
+    "No puedo controlar mi consumo de alcohol, ¿cómo puedo solucionarlo?",
+    "¿Qué terapias existen para tratar las adicciones?",
+    "¿Cómo puedo ayudar a alguien que tiene un problema de adicción?",
+    "¿Por qué no puedo dejar de jugar a los videojuegos?",
+    "No puedo parar de comprar cosas, ¿tengo un problema de adicción?",
+    "¿Qué es la abstinencia y cómo puedo hacer frente a ella?",
+    "¿Cómo afecta el consumo de drogas a mi salud mental?",
+    "¿Es posible recuperarse de una adicción?",
+    "¿Qué efectos tiene la adicción en mi vida diaria?",
+    "Siento que tengo una adicción a las redes sociales, ¿qué puedo hacer?"
+  ],
+  "responses": [
+    "La mejor manera de dejar de consumir drogas es a través de un tratamiento especializado. Busca ayuda profesional y considera un programa de rehabilitación en una clínica especializada.",
+    "Dejar de fumar es un proceso difícil, pero es posible. Considera hablar con un profesional de la salud para obtener ayuda y considera estrategias como la terapia de reemplazo de nicotina o la terapia conductual.",
+    "El primer paso para controlar tu consumo de alcohol es admitir que tienes un problema. Busca ayuda profesional, considera unirse a un grupo de apoyo como Alcohólicos Anónimos y considera la terapia cognitivo-conductual para cambiar tus patrones de pensamiento y comportamiento.",
+    "Existen muchas terapias para tratar las adicciones, como la terapia cognitivo-conductual, la terapia de grupo y la terapia familiar. Busca ayuda profesional para determinar qué tipo de terapia es mejor para ti.",
+    "Ayudar a alguien con un problema de adicción puede ser difícil. Comienza por ofrecer tu apoyo y aliento y alienta a tu ser querido a buscar ayuda profesional. Considera unirte a un grupo de apoyo para amigos y familiares de personas con adicciones.",
+    "El juego excesivo puede ser un signo de adicción. Considera hablar con un profesional de la salud para determinar si tienes un problema de adicción y busca ayuda profesional para superarlo.",
+    "El consumo compulsivo de compras puede ser un signo de adicción. Considera hablar con un profesional de la salud para determinar si tienes un problema de adicción y busca ayuda profesional para superarlo.",
+    "La abstinencia es el proceso de dejar de consumir una sustancia adictiva. Puede ser difícil, pero hay muchas estrategias para hacer frente a ella, como la terapia de reemplazo de nicotina y la terapia cognitivo-conductual.",
+    "El consumo de drogas puede tener muchos efectos negativos en la salud mental, como la depresión y la ansiedad. Busca ayuda profesional para determinar cómo afecta tu consumo de drogas a tu salud mental."
+   ]
+},
+      {
+  "tag": "neurocognitivos",
+  "patterns": [
+    "¿Qué son los trastornos neurocognitivos?",
+    "¿Cuáles son los síntomas de la demencia?",
+    "¿Cómo afecta el envejecimiento cognitivo a la memoria?",
+    "¿Puede la enfermedad de Alzheimer ser prevenida?",
+    "¿Cómo se diagnostica el deterioro cognitivo leve?"
+  ],
+  "responses": [
+    "Los trastornos neurocognitivos son un grupo de afecciones que afectan la capacidad cognitiva de una persona, incluyendo la memoria, el razonamiento y la comprensión. Ejemplos incluyen la enfermedad de Alzheimer y el deterioro cognitivo leve.",
+    "Los síntomas de la demencia incluyen la pérdida de memoria, problemas de lenguaje, dificultad para realizar tareas simples, cambios en el estado de ánimo y la personalidad, y problemas para llevar a cabo actividades cotidianas.",
+    "El envejecimiento cognitivo puede afectar la memoria de una persona, especialmente la memoria a corto plazo. Sin embargo, la memoria a largo plazo generalmente no se ve afectada.",
+    "Actualmente no hay una cura para la enfermedad de Alzheimer, pero se pueden tomar medidas para reducir el riesgo de desarrollarla, como hacer ejercicio regularmente, comer una dieta saludable y mantener una vida social activa.",
+    "El deterioro cognitivo leve se diagnostica mediante pruebas cognitivas y evaluaciones neuropsicológicas que miden la capacidad de una persona para realizar tareas y resolver problemas. Se requiere una evaluación completa para determinar si el deterioro cognitivo leve es un precursor de la demencia."
+  ]
+}
+    ,
+    {
+      "tag": "gilles_de_la_tourette",
+      "patterns": [
+        "¿Qué es el síndrome de Gilles de la Tourette?",
+        "¿Puedes decirme más sobre el síndrome de Gilles de la Tourette?",
+        "¿Qué causa el síndrome de Gilles de la Tourette?",
+        "¿Cómo se trata el síndrome de Gilles de la Tourette?",
+        "¿Cuáles son los síntomas del síndrome de Gilles de la Tourette?"
+      ],
+      "responses": [
+        "El síndrome de Gilles de la Tourette es un trastorno neurológico que se caracteriza por tics motores y vocales involuntarios y repetitivos.",
+        "El síndrome de Gilles de la Tourette puede ser causado por factores genéticos y ambientales, y se cree que involucra anormalidades en la función del cerebro y los neurotransmisores.",
+        "El tratamiento del síndrome de Gilles de la Tourette puede incluir terapia cognitivo-conductual, medicamentos para controlar los síntomas y, en casos graves, cirugía.",
+        "Los síntomas del síndrome de Gilles de la Tourette pueden incluir tics faciales, de cabeza y de cuello, así como tics vocales como gruñidos, carraspeos y palabras obscenas.",
+        "Si tienes más preguntas sobre el síndrome de Gilles de la Tourette, por favor no dudes en preguntar."
+      ]
+    }
+    ,
+    {
+  "tag": "anxiety",
+  "patterns": [
+    "Siento una gran ansiedad",
+    "Tengo mucho miedo y nerviosismo",
+    "Siento que algo malo va a pasar",
+    "No puedo dejar de preocuparme"
+  ],
+  "responses": [
+    "Entiendo cómo te sientes. Muchas personas sufren de ansiedad. ¿Quieres hablar más sobre lo que estás experimentando?",
+    "La ansiedad puede ser muy desafiante. ¿Hay algo que te ayude a sentirte más tranquilo/a?",
+    "La ansiedad puede ser muy debilitante. ¿Has considerado buscar ayuda profesional?",
+    "La ansiedad es una reacción normal del cuerpo a situaciones estresantes. ¿Hay algo específico que esté causando tu ansiedad?",
+    "Existen muchas estrategias efectivas para manejar la ansiedad. ¿Te gustaría que te comparta algunas?"
+  ]
+},
+{
+  "tag": "tourettes",
+  "patterns": [
+    "Tengo síntomas de Gilles de la Tourette",
+    "Hago movimientos involuntarios y ruidos extraños",
+    "Siento que no puedo controlar mis tics",
+    "La gente me mira raro cuando hago mis tics"
+  ],
+  "responses": [
+    "Los tics pueden ser muy frustrantes. ¿Has hablado con un médico o un especialista sobre esto?",
+    "Los tics pueden ser síntomas de Gilles de la Tourette. ¿Quieres hablar más sobre lo que estás experimentando?",
+    "Los tics pueden ser muy debilitantes. ¿Hay algo que te ayude a controlarlos?",
+    "Los tics pueden ser muy estigmatizantes. ¿Hay algo que te ayude a sentirte más cómodo/a con tus tics?",
+    "Existen muchas estrategias efectivas para manejar los tics. ¿Te gustaría que te comparta algunas?"
+  ]
+},
+{
+  "tag": "otros-trastornos",
+  "patterns": [
+    "Tengo síntomas extraños",
+    "Me siento muy mal y no sé por qué",
+    "No puedo dejar de pensar en ciertas cosas",
+    "Me preocupa mucho mi salud mental"
+  ],
+  "responses": [
+    "Entiendo que puede ser difícil identificar lo que estás sintiendo. ¿Quieres hablar más sobre tus síntomas?",
+    "Es importante que hables sobre lo que estás experimentando. ¿Has considerado hablar con un profesional de la salud?",
+    "Los síntomas que estás experimentando pueden ser indicativos de un trastorno mental. ¿Quieres hablar más sobre esto?",
+    "Puede ser muy difícil lidiar con los síntomas mentales. ¿Hay algo que te ayude a sentirte mejor?",
+    "Existen muchos recursos y opciones de tratamiento disponibles. ¿Quieres que te comparta algunos?"
+  ]
+}
+,
+ {
+  "tag": "miedo_muerte",
+  "patterns": [
+    "¿Qué pasa después de la muerte?",
+    "Tengo miedo de morir",
+    "¿Qué pasa si no hay nada después de la muerte?",
+    "¿Qué pasa si estoy equivocado acerca de la vida después de la muerte?",
+    "No puedo dejar de pensar en la muerte"
+  ],
+  "responses": [
+    "Entiendo que el miedo a la muerte puede ser muy difícil de manejar. ¿Te gustaría hablar más sobre tus preocupaciones?",
+    "La muerte es un tema difícil de afrontar. ¿Te gustaría hablar más sobre cómo te sientes?",
+    "Es normal tener miedo a la muerte. ¿Quieres que hablemos más sobre este tema?",
+    "El miedo a la muerte es común y puede ser abrumador. ¿Quieres que te brinde algunos consejos para lidiar con este miedo?"
+  ],
+  "followup_responses": [
+    "¿Has hablado con alguien sobre tus sentimientos de miedo a la muerte?",
+    "¿Has considerado hablar con un profesional de la salud mental sobre este tema?",
+    "¿Hay algo específico que te asusta acerca de la muerte?",
+    "¿Qué actividades te hacen sentir más cómodo o seguros cuando piensas en la muerte?"
+  ]
+}
+,
+    {
+    "tag": "respuesta_corta",
+    "patterns": ["sí", "no", "ok", "gracias", "genial", "vale"],
+    "responses": [
+        "Por favor, intenta ser más específico en tu respuesta.",
+        "No estoy seguro de entender lo que quieres decir, ¿podrías reformular tu respuesta?",
+        "No he entendido lo que quieres decir, ¿podrías ser más claro?",
+        "Lo siento, pero necesito una respuesta más completa para poder ayudarte mejor.",
+        "¿Podrías proporcionar más detalles acerca de lo que estás tratando de decir?",
+        "Necesito más información para poder entender lo que estás diciendo."
+    ]
+}
+    
+  ]
+}
