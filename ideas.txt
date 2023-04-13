@@ -1,0 +1,24 @@
+chatbot para servicio al cliente de una empresa que ensambla computadores
+
+0. presupuesto del cliente ogama del pc
+1.CPU, que es, cuales tienen disponibles y sus precios, info de cada cpu.
+2.Memoria ram que es, cuales disponibles y sus precios, info de cada memoria
+3.Disco duro
+4.Tarjeta grafica
+5. gabinete
+5.fuente de poder
+6.monitor
+7.perifericos
+8.tarjeta madre
+9.disiapcion por aire o liquida
+5.sistema operativo preinstalado dependiendo para que lo quiera usar
+6.programas preinstalados dependiendo el perfil del usuario
+7.que otros productos vende
+8.respuestas cortas, solicitar mas informacion
+9.direccion del local
+10.nombre de la empresa e info de la empresa
+11.servicios de domicilio
+12. promociones
+13.garantias
+14. soporte tecnico presencial ovirtual
+15. info de contacto
