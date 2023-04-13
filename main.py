@@ -1,4 +1,3 @@
-import json
 import string
 from tkinter import scrolledtext, ttk
 import time
@@ -7,6 +6,7 @@ import tensorflow as tf
 import unicodedata
 from tensorflow.keras.preprocessing.text import Tokenizer
 import tkinter as tk
+import json
 
 # Cargar datos del archivo JSON
 with open("intents.json", encoding='utf-8') as archivo:
@@ -32,42 +32,8 @@ tokenizer.fit_on_texts(entrenamiento)
 palabras = tokenizer.word_index
 num_palabras = len(palabras) + 1
 
-# Crear datos de entrenamiento
-entradas = []
-salidas = []
-for doc in documentos:
-    # Crear vectores one-hot para la entrada
-    entrada = [0] * num_palabras
-    for palabra in doc[0]:
-        if palabra in palabras:
-            entrada[palabras[palabra]] = 1
-    entradas.append(entrada)
-
-    # Crear vectores one-hot para la salida
-    salida = [0] * len(clases)
-    salida[clases.index(doc[1])] = 1
-    salidas.append(salida)
-
-# Convertir a matrices numpy
-X = np.array(entradas)
-Y = np.array(salidas)
-"""
-# Definir modelo de red neuronal
-modelo = tf.keras.Sequential([
-    tf.keras.layers.Dense(128, input_dim=num_palabras, activation='relu'),
-    tf.keras.layers.Dense(len(clases), activation='softmax')
-])
-modelo.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
-
-# Entrenar modelo
-modelo.fit(X, Y, epochs=1000, batch_size=64, verbose=1)
-
-#guardar modelo
-modelo.save('modelo_chatbot_final.h5')
-"""
 #cargar modelo
 modelo = tf.keras.models.load_model('modelo_chatbot_final.h5')
-
 
 def procesar_entrada(entrada):
     # Eliminar signos de puntuación y tildes
@@ -75,7 +41,6 @@ def procesar_entrada(entrada):
     entrada = entrada.translate(str.maketrans('', '', string.punctuation))
     entrada = unicodedata.normalize('NFKD', entrada).encode('ASCII', 'ignore').decode('utf-8')
     return entrada
-
 
 def chatbot_respuesta(texto):
     global response_time  # Permite el acceso a la variable global
@@ -92,22 +57,6 @@ def chatbot_respuesta(texto):
         last_message=procesar_entrada(last_message)
         if texto.lower() in last_message.lower():
             return "Ya has dicho eso antes. ¿Hay algo más en lo que pueda ayudarte?"
-
-        """
-            # verificar si el usuario ya ha escrito esto antes
-        chat_history_text = chat_history.get("1.0", tk.END)
-        last_message_start = chat_history_text.rfind("Tú:")
-        if last_message_start != -1:
-            last_message_end = chat_history_text.find("\n\n", last_message_start)
-            last_message = chat_history_text[last_message_start:last_message_end]
-            last_message = procesar_entrada(last_message)
-            # calcular la distancia de Levenshtein entre el mensaje anterior y el mensaje actual
-            distance = Levenshtein.distance(texto.lower(), last_message.lower())
-            print(distance)
-            threshold = 7  # umbral de similitud
-            if distance <= threshold:
-                return "Ya has dicho eso antes. ¿Hay algo más en lo que pueda ayudarte?"
-        """
 
     # Preprocesamiento de la entrada
     entrada = [0] * num_palabras
@@ -145,9 +94,6 @@ def chatbot_respuesta(texto):
     response_time = end_time - start_time
     response_time = str(format(response_time, '.3f'))
     return respuesta
-
-
-
 
 # Crea la interfaz gráfica del chatbot
 def send():
@@ -195,16 +141,6 @@ root.title("Chatbot")
 root.geometry("800x600")
 root.resizable(width=False, height=False)
 
-"""
-# Ajustamos el fondo de pantalla y el logo
-background_image = tk.PhotoImage(file="background.jpeg")
-background_label = tk.Label(root, image=background_image)
-background_label.place(x=0, y=0, relwidth=1, relheight=1)
-logo_image = tk.PhotoImage(file="logo.jpeg")
-logo_label = tk.Label(root, image=logo_image)
-logo_label.grid(column=0, row=0, padx=10, pady=10)
-"""
-
 # Agregamos un título y un mensaje de bienvenida
 title_label = tk.Label(root, text="¡Bienvenido al Chatbot!", font=("Arial", 20, "bold"))
 title_label.grid(column=1, row=0, padx=10, pady=10)
@@ -233,11 +169,9 @@ send_button = tk.Button(root, text="Enviar", command=send, width=10)
 send_button.configure(font=('Arial', 12))
 send_button.grid(column=1, row=2, padx=10, pady=10, sticky="e")
 
-
 # Ajustamos la posición de la etiqueta de tiempo de respuesta
 response_time_label = tk.Label(root, text="", font=("Arial", 8))
 response_time_label.grid(column=1, row=2, padx=180, pady=10, sticky="e")
-
 
 # Centramos el chat_history y agregamos un padding alrededor
 root.grid_rowconfigure(1, weight=1)
@@ -252,9 +186,7 @@ root.option_add('*Label.Font', 'Arial Unicode MS 12')
 root.option_add('*Message.Font', 'Arial Unicode MS 12')
 root.option_add('*Text.Font', 'Arial Unicode MS 12')
 
-
 # Ajustamos el tamaño de fuente del chat_history
 chat_history.config(font=("Arial Unicode MS", 12))
-
 
 root.mainloop()
