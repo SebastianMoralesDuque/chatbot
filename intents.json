@@ -1,0 +1,59 @@
+{
+    "intents": 
+    [
+      {
+        "tag": "saludo",
+        "patterns": [
+          "Hola",
+          "Buenos días",
+          "¿Cómo estás?",
+          "Saludos"
+        ],
+        "responses": [
+          "¡Hola! ¿En qué puedo ayudarte?",
+          "¡Hola! Bienvenido al servicio al cliente de nuestra empresa.",
+          "Hola, ¿en qué puedo asistirte hoy?",
+          "Buenos días, ¿cómo puedo ayudarte?",
+          "¡Hola! Gracias por contactarnos. ¿En qué puedo ayudarte?",
+          "¡Hola! ¿Cómo estás? ¿En qué puedo asistirte hoy?"
+        ]
+      },
+      {
+        "tag": "despedida",
+        "patterns": [
+          "Adiós",
+          "Hasta luego",
+          "Gracias por la ayuda",
+          "Chao",
+          "Nos vemos"
+        ],
+        "responses": [
+          "¡Gracias por contactarnos! Esperamos poder ayudarte de nuevo pronto.",
+          "¡Hasta luego! Que tengas un buen día.",
+          "¡Gracias a ti por confiar en nuestra empresa! Si necesitas algo más, no dudes en contactarnos.",
+          "¡Chao! Esperamos haberte brindado un buen servicio.",
+          "¡Nos vemos! Que tengas un buen día.",
+          "¡Ha sido un placer ayudarte! Si necesitas algo más, no dudes en contactarnos."
+        ]
+      },
+      {
+        "tag": "cpu",
+        "patterns": [
+          "¿Qué es una CPU?",
+          "¿Cuáles son las CPUs disponibles?",
+          "¿Qué precio tienen las CPUs?",
+          "Necesito una CPU para mi PC, ¿cuál me recomiendan?",
+          "¿Qué información me pueden dar sobre las CPUs?",
+          "¿Qué CPU es la mejor para mi presupuesto?"
+        ],
+        "responses": [
+          "La CPU es el procesador central de tu PC. En nuestra empresa, contamos con diferentes modelos de CPUs disponibles, como Intel Core i5, i7 e i9, así como AMD Ryzen 5, 7 y 9. Cada modelo tiene diferentes especificaciones y precios. ¿Tienes alguna preferencia o presupuesto en mente?",
+          "Tenemos varios modelos de CPUs disponibles, como Intel Core i5, i7 e i9, y AMD Ryzen 5, 7 y 9. Cada modelo tiene diferentes especificaciones y precios. ¿En qué te puedo ayudar específicamente?",
+          "Los precios de nuestras CPUs varían según el modelo y las especificaciones. ¿Tienes algún presupuesto en mente?",
+          "Para recomendarte una CPU, necesito saber para qué vas a utilizar tu PC y cuál es tu presupuesto. ¿Puedes darme esa información?",
+          "La CPU es el cerebro de tu PC, y en nuestra empresa contamos con varios modelos de CPUs de diferentes marcas y precios. ¿En qué te puedo ayudar específicamente?",
+          "Podemos recomendarte una CPU según tu presupuesto y para qué vas a utilizar tu PC. ¿Podrías proporcionarme esa información?"
+        ]
+      }
+    ]
+}
