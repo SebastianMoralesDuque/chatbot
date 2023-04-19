@@ -6,16 +6,18 @@
         "patterns": [
           "Hola",
           "Buenos días",
-          "¿Cómo estás?",
-          "Saludos"
+          "Buenas tardes",
+          "Buenas noches",
+          "¿Que tal?",
+          "¿Qué hay de nuevo?"
         ],
         "responses": [
           "¡Hola! ¿En qué puedo ayudarte?",
           "¡Hola! Bienvenido al servicio al cliente de nuestra empresa.",
           "Hola, ¿en qué puedo asistirte hoy?",
-          "Buenos días, ¿cómo puedo ayudarte?",
           "¡Hola! Gracias por contactarnos. ¿En qué puedo ayudarte?",
-          "¡Hola! ¿Cómo estás? ¿En qué puedo asistirte hoy?"
+          "¡Hola! Muy bien. ¿En qué puedo asistirte hoy?",
+          "¡Hola! Nada nuevo. ¿En qué puedo asistirte hoy?"
         ]
       },
       {
@@ -23,9 +25,12 @@
         "patterns": [
           "Adiós",
           "Hasta luego",
-          "Gracias por la ayuda",
           "Chao",
-          "Nos vemos"
+          "Nos vemos",
+          "Hsta la proxima",
+          "Cuidate",
+          "Que te vaya bien",
+          "Hasta mañana"
         ],
         "responses": [
           "¡Gracias por contactarnos! Esperamos poder ayudarte de nuevo pronto.",
@@ -37,22 +42,48 @@
         ]
       },
       {
-        "tag": "cpu",
+        "tag": "procesador",
         "patterns": [
-          "¿Qué es una CPU?",
-          "¿Cuáles son las CPUs disponibles?",
-          "¿Qué precio tienen las CPUs?",
-          "Necesito una CPU para mi PC, ¿cuál me recomiendan?",
-          "¿Qué información me pueden dar sobre las CPUs?",
-          "¿Qué CPU es la mejor para mi presupuesto?"
+          "¿Qué es un procesador?",
+          "¿Cómo funciona un procesador?",
+          "¿Qué es la velocidad del procesador?",
+          "¿Qué es la caché del procesador?",
+          "¿Qué es el núcleo de un procesador?",
+          "¿Cómo se compara la velocidad del procesador entre diferentes modelos?",
+          "¿Qué es la arquitectura del procesador?",
+          "¿Cómo puedo saber qué procesador tiene mi computadora?",
+          "¿Qué es el overclocking del procesador?",
+
+          "¿Cuál es la diferencia entre un procesador de gama alta y uno de gama baja?",
+          "¿Qué procesador es el mejor para juegos?",
+          "¿Qué procesador es el mejor para la edición de video o gráficos?",
+          "¿Cómo puedo saber si mi placa base es compatible con un procesador en particular?",
+          "¿Cómo puedo saber si mi placa base es compatible con un procesador en particular?",
+          "¿Qué tipo de refrigeración necesito para mi procesador?",
+          "¿Qué garantía tienen sus procesadores?",
+          "¿Cuánto tiempo tardará en enviarse mi procesador?"
+
         ],
         "responses": [
-          "La CPU es el procesador central de tu PC. En nuestra empresa, contamos con diferentes modelos de CPUs disponibles, como Intel Core i5, i7 e i9, así como AMD Ryzen 5, 7 y 9. Cada modelo tiene diferentes especificaciones y precios. ¿Tienes alguna preferencia o presupuesto en mente?",
-          "Tenemos varios modelos de CPUs disponibles, como Intel Core i5, i7 e i9, y AMD Ryzen 5, 7 y 9. Cada modelo tiene diferentes especificaciones y precios. ¿En qué te puedo ayudar específicamente?",
-          "Los precios de nuestras CPUs varían según el modelo y las especificaciones. ¿Tienes algún presupuesto en mente?",
-          "Para recomendarte una CPU, necesito saber para qué vas a utilizar tu PC y cuál es tu presupuesto. ¿Puedes darme esa información?",
-          "La CPU es el cerebro de tu PC, y en nuestra empresa contamos con varios modelos de CPUs de diferentes marcas y precios. ¿En qué te puedo ayudar específicamente?",
-          "Podemos recomendarte una CPU según tu presupuesto y para qué vas a utilizar tu PC. ¿Podrías proporcionarme esa información?"
+          "Un procesador es un componente clave de una computadora, que se encarga de procesar las instrucciones y datos que se le envían.",
+          "El procesador recibe instrucciones y datos de la memoria y los procesa utilizando una serie de circuitos integrados. El procesador también puede realizar operaciones matemáticas y lógicas en los datos que se le envían.",
+          "La velocidad del procesador se refiere a la cantidad de ciclos de reloj que se pueden realizar por segundo. Se mide en gigahertzios (GHz) y es una medida de la velocidad a la que puede procesar los datos.",
+          "La caché es una memoria integrada en el procesador que almacena datos frecuentemente utilizados para que puedan accederse rápidamente. Esto ayuda a mejorar la velocidad de procesamiento.",
+          "El núcleo de un procesador es la unidad de procesamiento central que contiene la unidad de control y la unidad aritmética lógica. Los procesadores modernos tienen múltiples núcleos que les permiten realizar varias tareas al mismo tiempo.",
+          "La velocidad del procesador se mide en GHz, por lo que cuanto mayor sea la velocidad, más rápido será el procesador. Sin embargo, también hay otros factores que influyen en la velocidad, como el número de núcleos y la caché.",
+          "La arquitectura del procesador se refiere a cómo está diseñado el procesador y cómo se realizan las operaciones. Los procesadores de diferentes fabricantes pueden tener arquitecturas diferentes.",
+          "Puede buscar en las especificaciones de su computadora o utilizar herramientas de diagnóstico de hardware para determinar el modelo y la velocidad del procesador. También puede ver esta información en la configuración del sistema operativo de su computadora.",
+          "El overclocking es el proceso de aumentar la velocidad del procesador más allá de la velocidad recomendada por el fabricante. Aunque puede mejorar la velocidad de la computadora, también puede dañar el procesador y anular la garantía.",
+
+          "Los procesadores de gama alta tienen una velocidad de reloj más alta y más núcleos, lo que les permite procesar más datos y realizar tareas más complejas. Los procesadores de gama baja son menos potentes y tienen menos características, pero son más económicos.",
+          "Los procesadores de gama alta con varios núcleos y una alta velocidad de reloj son los mejores para juegos. En particular, los procesadores de la serie Intel Core i7 o i9 y los procesadores de la serie AMD Ryzen son muy populares entre los jugadores.",
+          "Para la edición de video o gráficos, los procesadores con múltiples núcleos y una alta velocidad de reloj son los mejores. Los procesadores de la serie Intel Core i9 o los procesadores de la serie AMD Ryzen Threadripper son muy populares entre los profesionales de la edición de video y gráficos.",
+          "El socket necesario para el procesador depende del modelo del procesador y de la placa base que esté utilizando. Los procesadores de diferentes fabricantes tienen diferentes tipos de sockets, por lo que es importante asegurarse de que el procesador sea compatible con la placa base antes de comprarlo.",
+          "La información sobre la compatibilidad del procesador suele estar disponible en las especificaciones de la placa base. También puede utilizar herramientas de diagnóstico de hardware para determinar la compatibilidad.",
+          "La refrigeración necesaria para el procesador depende del modelo del procesador y de la cantidad de calor que produce. Los procesadores más potentes suelen necesitar un sistema de refrigeración más potente, como un enfriador de aire o líquido.",
+          "La garantía de los procesadores puede variar dependiendo del fabricante. La mayoría de los procesadores tienen una garantía de al menos un año, y algunos fabricantes ofrecen garantías extendidas.",
+          "El tiempo de envío depende de la ubicación del cliente y de la disponibilidad del procesador. La mayoría de los procesadores se envían dentro de los 2 a 3 días hábiles posteriores a la compra, pero esto puede variar dependiendo del proveedor."
+
         ]
       }
     ]
