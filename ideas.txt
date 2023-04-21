@@ -24,3 +24,6 @@ chatbot para servicio al cliente de una empresa que ensambla computadores
     Información sobre el soporte técnico presencial o virtual disponible.
     Información de contacto adicional para consultas o dudas.
     Respuestas predeterminadas para consultas que no tengan que ver con el ensamblaje de computadoras.
+
+    utilizar un algoritmo para mirar la similutd de toda la oracion entre la entrada del usuario y las respuestas que estan en el diccionario
+    seleccionado dependiendo de la etiqueta predicha y si no se encuentra exactamente la pregunta entonces se revisa la similutd.

@@ -7,6 +7,8 @@ import unicodedata
 from tensorflow.keras.preprocessing.text import Tokenizer
 import tkinter as tk
 import json
+import Levenshtein
+
 
 # Cargar datos del archivo JSON
 with open("intents.json", encoding='utf-8') as archivo:
@@ -86,7 +88,19 @@ def chatbot_respuesta(texto):
     if preguntas_respuestas:
         respuesta = preguntas_respuestas.get(texto.lower(), "")
         if respuesta == "":
-            respuesta = np.random.choice(list(preguntas_respuestas.values()))
+            print("asx")
+            preguntas = []
+            respuestas = []
+            for intent in datos["intents"]:
+                    if intent["tag"] == tag_respuesta:
+                        patterns = intent["patterns"]
+                        responses = intent["responses"]
+                        if len(patterns) == len(responses):
+                            preguntas.extend([procesar_entrada(pattern) for pattern in patterns])
+                            respuestas.extend(responses)
+            distancias = [Levenshtein.distance(texto.lower(), pregunta.lower()) for pregunta in preguntas]
+            pregunta_similar = preguntas[np.argmin(distancias)]
+            respuesta = respuestas[np.argmin(distancias)]
     else:
         respuesta = np.random.choice(responses)
 
