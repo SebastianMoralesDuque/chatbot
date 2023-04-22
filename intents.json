@@ -38,7 +38,7 @@
         "¡Chao! Esperamos haberte brindado un buen servicio.",
         "¡Nos vemos! Que tengas un buen día.",
         "¡Ha sido un placer ayudarte! Si necesitas algo más, no dudes en contactarnos."
-      ] 
+      ]
     },
     {
       "tag": "procesador",
@@ -82,14 +82,28 @@
       ]
     },
     {
-      "tag": "prueba",
+      "tag": "especificaciones_cliente",
       "patterns": [
-        "pregunta1",
-        "pregunta2"
+        "necesito un computador barato",
+        "necesito un computador potente pero no tan caro",
+        "necesito un computador potente",
+        "vendes computadores usados?",
+        "necesito un computador para programar",
+        "necesito un computador para editar",
+        "necesito un computador para estudiar",
+        "como saber las especificaciones que necesito para lo que voy a hacer",
+        "tengo poco dinero, que computador podria comprar"
       ],
       "responses": [
-        "respuesta1",
-        "respuesta2"
+        "Te puedo recomendar un computador de gama baja, suelen ser economicos",
+        "Te podria recomendar un computador de gama media, suelen ser algo economicos y potentes",
+        "Te podria recomendar un computador de gama alta, aunque son algo caros pero son muy potentes",
+        "Solamente vendemos computadores nuevos",
+        "Para programar Dependiendo de lo que vayas a programar podrias necesitar un computador mas potente o no, pero un computador de gama baja puede ser suficiente para programar",
+        "Para editar videos necesitas un computador de gama alta, con una buena tarjeta grafica y un procesador potente",
+        "Dependiendo que vayas a estudiar necesitas un computador mas potente o no, pero probablemente para la mayoria de casos de estudio un computador dea baja puede ser suficiente",
+        "Puedes decirme para que vas a utilizar el computador y aconsejarte en base a eso",
+        "Te puedo recomendar un computador de gama baja, estos computadores son economicos"
       ]
     }
   ]

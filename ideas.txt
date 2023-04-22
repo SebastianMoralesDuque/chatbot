@@ -2,28 +2,18 @@ chatbot para servicio al cliente de una empresa que ensambla computadores
 
     Saludo y presentación de la empresa.
     Información sobre el presupuesto del cliente y las especificaciones del PC que busca.
+    gama baja, media y alta. para que lo va usar, programar, estudiar, jugar, editar.
+
     Información detallada sobre los diferentes tipos de CPU disponibles, sus características y precios.
     Información sobre las diferentes opciones de memoria RAM disponibles, sus características y precios.
     Información sobre los diferentes tipos de disco duro, sus características y precios.
     Información sobre las diferentes opciones de tarjeta gráfica, sus características y precios.
-    Información sobre los diferentes gabinetes disponibles, sus características y precios.
     Información sobre las diferentes opciones de fuente de poder, sus características y precios.
-    Información sobre los diferentes tipos de monitor, sus características y precios.
     Información sobre los diferentes periféricos disponibles, sus características y precios.
     Información sobre la tarjeta madre y sus características.
-    Información sobre los sistemas de disipación de calor disponibles: por aire o líquida.
     Información sobre los sistemas operativos preinstalados disponibles dependiendo del uso que le vaya a dar el cliente.
-    Información sobre los programas preinstalados disponibles dependiendo del perfil del usuario y para qué va a utilizar el PC.
-    Información sobre otros productos que vende la empresa.
     Respuestas cortas para solicitar más información si se necesita.
     Información sobre la ubicación y dirección del local.
     Información sobre el nombre y datos de la empresa.
-    Información sobre servicios de domicilio disponibles.
-    Información sobre promociones y descuentos especiales.
-    Información sobre garantías y políticas de devolución.
-    Información sobre el soporte técnico presencial o virtual disponible.
     Información de contacto adicional para consultas o dudas.
-    Respuestas predeterminadas para consultas que no tengan que ver con el ensamblaje de computadoras.
-
-    utilizar un algoritmo para mirar la similutd de toda la oracion entre la entrada del usuario y las respuestas que estan en el diccionario
-    seleccionado dependiendo de la etiqueta predicha y si no se encuentra exactamente la pregunta entonces se revisa la similutd.
+    Respuestas predeterminadas para consultas que no tengan que ver con los productos de la empresa.
