@@ -105,6 +105,19 @@
         "Puedes decirme para que vas a utilizar el computador y aconsejarte en base a eso",
         "Te puedo recomendar un computador de gama baja, estos computadores son economicos"
       ]
+    },
+    {
+      "tag": "precio",
+      "patterns": [
+        "cuanto vale",
+        "el computador",
+        "lo necesito para estudiar"
+      ],
+      "responses": [
+        "Que cosa?",
+        "Para que necesitas el computador?",
+        "te podria recomendar recomendar un computador barato"
+      ]
     }
   ]
 }

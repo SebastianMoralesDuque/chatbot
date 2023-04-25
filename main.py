@@ -44,10 +44,19 @@ def procesar_entrada(entrada):
     entrada = unicodedata.normalize('NFKD', entrada).encode('ASCII', 'ignore').decode('utf-8')
     return entrada
 
+
 def chatbot_respuesta(texto):
-    global response_time  # Permite el acceso a la variable global
-    # Mide el tiempo de respuesta
+    global contexto
+    global response_time
     start_time = time.time()
+    # Declarar variable contexto
+    if 'contexto' not in globals():
+        contexto = ''
+    # Actualizar variable contexto
+    contexto = ' '.join([contexto, texto]).strip()
+    # Si hay más de una pregunta en el contexto, eliminar la más antigua
+    if len(contexto.split()) > 1:
+        contexto = ' '.join(contexto.split()[1:])
     #procesa la entrada del usuario para quitar tildes y signos
     texto=procesar_entrada(texto)
     #verifica que el usuario no haya escrito de nuevo lo mismo
@@ -84,11 +93,10 @@ def chatbot_respuesta(texto):
                 respuesta = responses[i]
                 preguntas_respuestas[pregunta] = respuesta
 
-    # Seleccionar respuesta aleatoria
+    # Seleccionar respuesta 
     if preguntas_respuestas:
         respuesta = preguntas_respuestas.get(texto.lower(), "")
         if respuesta == "":
-            print("asx")
             preguntas = []
             respuestas = []
             for intent in datos["intents"]:
@@ -102,8 +110,17 @@ def chatbot_respuesta(texto):
             pregunta_similar = preguntas[np.argmin(distancias)]
             respuesta = respuestas[np.argmin(distancias)]
     else:
-        respuesta = np.random.choice(responses)
-
+            for intent in datos["intents"]:
+                if intent["tag"] == tag_respuesta:
+                    patterns = intent["patterns"]
+                    responses = intent["responses"]
+                    if len(patterns) == len(responses):
+                        preguntas.extend([procesar_entrada(pattern) + procesar_entrada(contexto) for pattern in patterns])
+                        respuestas.extend(responses)
+            distancias = [Levenshtein.distance(texto.lower(), pregunta.lower()) for pregunta in preguntas]
+            pregunta_similar = preguntas[np.argmin(distancias)]
+            respuesta = respuestas[np.argmin(distancias)]
+            print("hola")
     end_time = time.time()
     response_time = end_time - start_time
     response_time = str(format(response_time, '.3f'))
