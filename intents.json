@@ -1,0 +1,123 @@
+{
+  "intents": [
+    {
+      "tag": "saludo",
+      "patterns": [
+        "Hola",
+        "Buenos días",
+        "Buenas tardes",
+        "Buenas noches",
+        "¿Que tal?",
+        "¿Qué hay de nuevo?"
+      ],
+      "responses": [
+        "¡Hola! ¿En qué puedo ayudarte?",
+        "¡Hola! Bienvenido al servicio al cliente de nuestra empresa.",
+        "Hola, ¿en qué puedo asistirte hoy?",
+        "¡Hola! Gracias por contactarnos. ¿En qué puedo ayudarte?",
+        "¡Hola! Muy bien. ¿En qué puedo asistirte hoy?",
+        "¡Hola! Nada nuevo. ¿En qué puedo asistirte hoy?"
+      ]
+    },
+    {
+      "tag": "despedida",
+      "patterns": [
+        "Adiós",
+        "Hasta luego",
+        "Chao",
+        "Nos vemos",
+        "Hsta la proxima",
+        "Cuidate",
+        "Que te vaya bien",
+        "Hasta mañana"
+      ],
+      "responses": [
+        "¡Gracias por contactarnos! Esperamos poder ayudarte de nuevo pronto.",
+        "¡Hasta luego! Que tengas un buen día.",
+        "¡Gracias a ti por confiar en nuestra empresa! Si necesitas algo más, no dudes en contactarnos.",
+        "¡Chao! Esperamos haberte brindado un buen servicio.",
+        "¡Nos vemos! Que tengas un buen día.",
+        "¡Ha sido un placer ayudarte! Si necesitas algo más, no dudes en contactarnos."
+      ]
+    },
+    {
+      "tag": "procesador",
+      "patterns": [
+        "¿Qué es un procesador?",
+        "¿Cómo funciona un procesador?",
+        "¿Qué es la velocidad del procesador?",
+        "¿Qué es la caché del procesador?",
+        "¿Qué es el núcleo de un procesador?",
+        "¿Cómo se compara la velocidad del procesador entre diferentes modelos?",
+        "¿Qué es la arquitectura del procesador?",
+        "¿Cómo puedo saber qué procesador tiene mi computadora?",
+        "¿Qué es el overclocking del procesador?",
+        "¿Cuál es la diferencia entre un procesador de gama alta y uno de gama baja?",
+        "¿Qué procesador es el mejor para juegos?",
+        "¿Qué procesador es el mejor para la edición de video o gráficos?",
+        "¿Cómo puedo saber si mi placa base es compatible con un procesador en particular?",
+        "¿Cómo puedo saber si mi placa base es compatible con un procesador en particular?",
+        "¿Qué tipo de refrigeración necesito para mi procesador?",
+        "¿Qué garantía tienen sus procesadores?",
+        "¿Cuánto tiempo tardará en enviarse mi procesador?"
+      ],
+      "responses": [
+        "Un procesador es un componente clave de una computadora, que se encarga de procesar las instrucciones y datos que se le envían.",
+        "El procesador recibe instrucciones y datos de la memoria y los procesa utilizando una serie de circuitos integrados. El procesador también puede realizar operaciones matemáticas y lógicas en los datos que se le envían.",
+        "La velocidad del procesador se refiere a la cantidad de ciclos de reloj que se pueden realizar por segundo. Se mide en gigahertzios (GHz) y es una medida de la velocidad a la que puede procesar los datos.",
+        "La caché es una memoria integrada en el procesador que almacena datos frecuentemente utilizados para que puedan accederse rápidamente. Esto ayuda a mejorar la velocidad de procesamiento.",
+        "El núcleo de un procesador es la unidad de procesamiento central que contiene la unidad de control y la unidad aritmética lógica. Los procesadores modernos tienen múltiples núcleos que les permiten realizar varias tareas al mismo tiempo.",
+        "La velocidad del procesador se mide en GHz, por lo que cuanto mayor sea la velocidad, más rápido será el procesador. Sin embargo, también hay otros factores que influyen en la velocidad, como el número de núcleos y la caché.",
+        "La arquitectura del procesador se refiere a cómo está diseñado el procesador y cómo se realizan las operaciones. Los procesadores de diferentes fabricantes pueden tener arquitecturas diferentes.",
+        "Puede buscar en las especificaciones de su computadora o utilizar herramientas de diagnóstico de hardware para determinar el modelo y la velocidad del procesador. También puede ver esta información en la configuración del sistema operativo de su computadora.",
+        "El overclocking es el proceso de aumentar la velocidad del procesador más allá de la velocidad recomendada por el fabricante. Aunque puede mejorar la velocidad de la computadora, también puede dañar el procesador y anular la garantía.",
+        "Los procesadores de gama alta tienen una velocidad de reloj más alta y más núcleos, lo que les permite procesar más datos y realizar tareas más complejas. Los procesadores de gama baja son menos potentes y tienen menos características, pero son más económicos.",
+        "Los procesadores de gama alta con varios núcleos y una alta velocidad de reloj son los mejores para juegos. En particular, los procesadores de la serie Intel Core i7 o i9 y los procesadores de la serie AMD Ryzen son muy populares entre los jugadores.",
+        "Para la edición de video o gráficos, los procesadores con múltiples núcleos y una alta velocidad de reloj son los mejores. Los procesadores de la serie Intel Core i9 o los procesadores de la serie AMD Ryzen Threadripper son muy populares entre los profesionales de la edición de video y gráficos.",
+        "El socket necesario para el procesador depende del modelo del procesador y de la placa base que esté utilizando. Los procesadores de diferentes fabricantes tienen diferentes tipos de sockets, por lo que es importante asegurarse de que el procesador sea compatible con la placa base antes de comprarlo.",
+        "La información sobre la compatibilidad del procesador suele estar disponible en las especificaciones de la placa base. También puede utilizar herramientas de diagnóstico de hardware para determinar la compatibilidad.",
+        "La refrigeración necesaria para el procesador depende del modelo del procesador y de la cantidad de calor que produce. Los procesadores más potentes suelen necesitar un sistema de refrigeración más potente, como un enfriador de aire o líquido.",
+        "La garantía de los procesadores puede variar dependiendo del fabricante. La mayoría de los procesadores tienen una garantía de al menos un año, y algunos fabricantes ofrecen garantías extendidas.",
+        "El tiempo de envío depende de la ubicación del cliente y de la disponibilidad del procesador. La mayoría de los procesadores se envían dentro de los 2 a 3 días hábiles posteriores a la compra, pero esto puede variar dependiendo del proveedor."
+      ]
+    },
+    {
+      "tag": "especificaciones_cliente",
+      "patterns": [
+        "necesito un computador barato",
+        "necesito un computador potente pero no tan caro",
+        "necesito un computador potente",
+        "vendes computadores usados?",
+        "necesito un computador para programar",
+        "necesito un computador para editar",
+        "necesito un computador para estudiar",
+        "como saber las especificaciones que necesito para lo que voy a hacer",
+        "tengo poco dinero, que computador podria comprar"
+      ],
+      "responses": [
+        "Te puedo recomendar un computador de gama baja, suelen ser economicos",
+        "Te podria recomendar un computador de gama media, suelen ser algo economicos y potentes",
+        "Te podria recomendar un computador de gama alta, aunque son algo caros pero son muy potentes",
+        "Solamente vendemos computadores nuevos",
+        "Para programar Dependiendo de lo que vayas a programar podrias necesitar un computador mas potente o no, pero un computador de gama baja puede ser suficiente para programar",
+        "Para editar videos necesitas un computador de gama alta, con una buena tarjeta grafica y un procesador potente",
+        "Dependiendo que vayas a estudiar necesitas un computador mas potente o no, pero probablemente para la mayoria de casos de estudio un computador dea baja puede ser suficiente",
+        "Puedes decirme para que vas a utilizar el computador y aconsejarte en base a eso",
+        "Te puedo recomendar un computador de gama baja, estos computadores son economicos"
+      ]
+    },
+    {
+      "tag": "precio",
+      "patterns": [
+        "cuanto vale",
+        "el computador",
+        "lo necesito para estudiar"
+      ],
+      "responses": [
+        "Que cosa?",
+        "Para que necesitas el computador?",
+        "te podria recomendar recomendar un computador barato"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+chatbot para servicio al cliente de una empresa que ensambla computadores
+
+    Saludo y presentación de la empresa.
+    Información sobre el presupuesto del cliente y las especificaciones del PC que busca.
+    gama baja, media y alta. para que lo va usar, programar, estudiar, jugar, editar.
+
+    Información detallada sobre los diferentes tipos de CPU disponibles, sus características y precios.
+    Información sobre las diferentes opciones de memoria RAM disponibles, sus características y precios.
+    Información sobre los diferentes tipos de disco duro, sus características y precios.
+    Información sobre las diferentes opciones de tarjeta gráfica, sus características y precios.
+    Información sobre las diferentes opciones de fuente de poder, sus características y precios.
+    Información sobre los diferentes periféricos disponibles, sus características y precios.
+    Información sobre la tarjeta madre y sus características.
+    Información sobre los sistemas operativos preinstalados disponibles dependiendo del uso que le vaya a dar el cliente.
+    Respuestas cortas para solicitar más información si se necesita.
+    Información sobre la ubicación y dirección del local.
+    Información sobre el nombre y datos de la empresa.
+    Información de contacto adicional para consultas o dudas.
+    Respuestas predeterminadas para consultas que no tengan que ver con los productos de la empresa.
