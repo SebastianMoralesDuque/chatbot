@@ -9,7 +9,6 @@ import tkinter as tk
 import json
 import Levenshtein
 
-
 # Cargar datos del archivo JSON
 with open("intents.json", encoding='utf-8') as archivo:
     datos = json.load(archivo)
@@ -44,19 +43,10 @@ def procesar_entrada(entrada):
     entrada = unicodedata.normalize('NFKD', entrada).encode('ASCII', 'ignore').decode('utf-8')
     return entrada
 
-
 def chatbot_respuesta(texto):
-    global contexto
-    global response_time
+    global response_time  # Permite el acceso a la variable global
+    # Mide el tiempo de respuesta
     start_time = time.time()
-    # Declarar variable contexto
-    if 'contexto' not in globals():
-        contexto = ''
-    # Actualizar variable contexto
-    contexto = ' '.join([contexto, texto]).strip()
-    # Si hay más de una pregunta en el contexto, eliminar la más antigua
-    if len(contexto.split()) > 1:
-        contexto = ' '.join(contexto.split()[1:])
     #procesa la entrada del usuario para quitar tildes y signos
     texto=procesar_entrada(texto)
     #verifica que el usuario no haya escrito de nuevo lo mismo
@@ -110,17 +100,8 @@ def chatbot_respuesta(texto):
             pregunta_similar = preguntas[np.argmin(distancias)]
             respuesta = respuestas[np.argmin(distancias)]
     else:
-            for intent in datos["intents"]:
-                if intent["tag"] == tag_respuesta:
-                    patterns = intent["patterns"]
-                    responses = intent["responses"]
-                    if len(patterns) == len(responses):
-                        preguntas.extend([procesar_entrada(pattern) + procesar_entrada(contexto) for pattern in patterns])
-                        respuestas.extend(responses)
-            distancias = [Levenshtein.distance(texto.lower(), pregunta.lower()) for pregunta in preguntas]
-            pregunta_similar = preguntas[np.argmin(distancias)]
-            respuesta = respuestas[np.argmin(distancias)]
-            print("hola")
+        respuesta = np.random.choice(responses)
+
     end_time = time.time()
     response_time = end_time - start_time
     response_time = str(format(response_time, '.3f'))
