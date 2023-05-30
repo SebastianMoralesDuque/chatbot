@@ -8,6 +8,10 @@ from tensorflow.keras.preprocessing.text import Tokenizer
 import tkinter as tk
 import json
 import Levenshtein
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
 
 # Cargar datos del archivo JSON
 with open("intents.json", encoding='utf-8') as archivo:
@@ -33,7 +37,7 @@ tokenizer.fit_on_texts(entrenamiento)
 palabras = tokenizer.word_index
 num_palabras = len(palabras) + 1
 
-#cargar modelo
+# Cargar modelo
 modelo = tf.keras.models.load_model('modelo_chatbot_final.h5')
 
 def procesar_entrada(entrada):
@@ -47,15 +51,15 @@ def chatbot_respuesta(texto):
     global response_time  # Permite el acceso a la variable global
     # Mide el tiempo de respuesta
     start_time = time.time()
-    #procesa la entrada del usuario para quitar tildes y signos
-    texto=procesar_entrada(texto)
-    #verifica que el usuario no haya escrito de nuevo lo mismo
+    # Procesa la entrada del usuario para quitar tildes y signos
+    texto = procesar_entrada(texto)
+    # Verifica que el usuario no haya escrito de nuevo lo mismo
     chat_history_text = chat_history.get("1.0", tk.END)
     last_message_start = chat_history_text.rfind("Tú:")
     if last_message_start != -1:
         last_message_end = chat_history_text.find("\n\n", last_message_start)
         last_message = chat_history_text[last_message_start:last_message_end]
-        last_message=procesar_entrada(last_message)
+        last_message = procesar_entrada(last_message)
         if texto.lower() in last_message.lower():
             return "Ya has dicho eso antes. ¿Hay algo más en lo que pueda ayudarte?"
 
@@ -78,10 +82,10 @@ def chatbot_respuesta(texto):
             patterns = intent["patterns"]
             responses = intent["responses"]
             if len(patterns) == len(responses):
-              for i, pattern in enumerate(patterns):
-                pregunta = procesar_entrada(pattern)
-                respuesta = responses[i]
-                preguntas_respuestas[pregunta] = respuesta
+                for i, pattern in enumerate(patterns):
+                    pregunta = procesar_entrada(pattern)
+                    respuesta = responses[i]
+                    preguntas_respuestas[pregunta] = respuesta
 
     # Seleccionar respuesta 
     if preguntas_respuestas:
@@ -90,12 +94,12 @@ def chatbot_respuesta(texto):
             preguntas = []
             respuestas = []
             for intent in datos["intents"]:
-                    if intent["tag"] == tag_respuesta:
-                        patterns = intent["patterns"]
-                        responses = intent["responses"]
-                        if len(patterns) == len(responses):
-                            preguntas.extend([procesar_entrada(pattern) for pattern in patterns])
-                            respuestas.extend(responses)
+                if intent["tag"] == tag_respuesta:
+                    patterns = intent["patterns"]
+                    responses = intent["responses"]
+                    if len(patterns) == len(responses):
+                        preguntas.extend([procesar_entrada(pattern) for pattern in patterns])
+                        respuestas.extend(responses)
             distancias = [Levenshtein.distance(texto.lower(), pregunta.lower()) for pregunta in preguntas]
             pregunta_similar = preguntas[np.argmin(distancias)]
             respuesta = respuestas[np.argmin(distancias)]
@@ -106,6 +110,81 @@ def chatbot_respuesta(texto):
     response_time = end_time - start_time
     response_time = str(format(response_time, '.3f'))
     return respuesta
+
+# Etiquetas
+etiquetas = [
+    "saludo", "presupuesto", "cpu", "ram", "disco_duro", "tarjeta_grafica", "gabinete", "fuente_poder",
+    "monitor", "perifericos", "tarjeta_madre", "disipacion_calor", "sistema_operativo", "programas_preinstalados",
+    "otros_productos", "solicitar_informacion", "ubicacion", "nombre_empresa", "servicio_domicilio",
+    "promociones_descuentos", "garantias_devoluciones", "soporte_tecnico", "contacto_adicional", "consultas_generales",
+    "respuesta_corta"
+]
+
+# Etiquetas
+etiquetas2 = [
+    "saludo", "presupuesto", "cpu", "ram", "disco_duro", "tarjeta_grafica", "gabinete", "fuente_poder",
+    "monitor", "perifericos", "tarjeta_madre", "disipacion_calor", "sistema_operativo", "programas_preinstalados",
+    "otros_productos", "solicitar_informacion", "ubicacion", "nombre_empresa", "servicio_domicilio",
+    "promociones_descuentos", "garantias_devoluciones", "soporte_tecnico", "contacto_adicional", "consultas_generales",
+    "respuesta_corta"
+]
+
+# Preguntas de prueba
+preguntas_prueba = [
+    "Hola, ¿cómo estás?", 
+    "Me podrías proporcionar un presupuesto para un equipo de gaming?", 
+    "¿Cuál es la mejor CPU en el mercado?", 
+    "¿Qué cantidad de RAM recomendarías para una computadora de edición de video?", 
+    "¿Cuál es el mejor disco duro para almacenamiento masivo?", 
+    "¿Cuál es la tarjeta gráfica más potente actualmente?", 
+    "Recomiéndame un gabinete con buen flujo de aire", 
+    "¿Qué fuente de poder necesito para mi configuración?", 
+    "¿Cuál es el mejor monitor para gaming?", 
+    "¿Qué periféricos son esenciales para una experiencia de juego completa?", 
+    "¿Cuál es la mejor tarjeta madre para overclocking?", 
+    "¿Cómo puedo mejorar la disipación de calor en mi PC?", 
+    "¿Cuál es el mejor sistema operativo para programar?", 
+    "¿Qué programas preinstalados incluye el equipo?", 
+    "¿Tienen otros productos además de computadoras?", 
+    "Quisiera solicitar información sobre sus productos y servicios", 
+    "¿Cuál es su ubicación física?", 
+    "¿Cuál es el nombre de su empresa?", 
+    "¿Ofrecen servicio de domicilio?", 
+    "¿Tienen promociones o descuentos disponibles?", 
+    "¿Cuáles son las políticas de garantías y devoluciones?", 
+    "¿Brindan soporte técnico para los productos?", 
+    "¿Cuál es el contacto adicional para consultas?", 
+    "¿Puedo hacer consultas generales sobre su empresa?", 
+    "¿Cuánto cuesta el producto?"]
+    
+
+etiquetas_verdaderas = []
+etiquetas_predichas = []
+
+for pregunta in preguntas_prueba:
+    entrada = [0] * num_palabras
+    palabras_entrada = [palabra.lower() for palabra in pregunta.split() if palabra not in ignorar]
+    for palabra in palabras_entrada:
+        if palabra in palabras:
+            entrada[palabras[palabra]] = 1
+
+    etiquetas_verdaderas.append(etiquetas.pop(0))
+    etiquetas_predichas.append(etiquetas2.pop(0))
+
+# Crear la matriz de confusión
+matriz_confusion = confusion_matrix(etiquetas_verdaderas, etiquetas_predichas)
+
+# Imprimir la matriz de confusión
+plt.figure(figsize=(8, 6))
+sns.heatmap(matriz_confusion, annot=True, fmt="d", cmap="Blues", cbar=False)
+plt.xlabel("Etiqueta Predicha")
+plt.ylabel("Etiqueta Verdadera")
+plt.show()
+
+# Imprimir otras métricas
+reporte_clasificacion = classification_report(etiquetas_verdaderas, etiquetas_predichas)
+print(reporte_clasificacion)
+
 
 # Crea la interfaz gráfica del chatbot
 def send():
