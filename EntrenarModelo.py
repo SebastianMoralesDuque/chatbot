@@ -49,13 +49,13 @@ Y = np.array(salidas)
 
 # Definir modelo de red neuronal
 modelo = tf.keras.Sequential([
-    tf.keras.layers.Dense(16, input_dim=num_palabras, activation='relu'),
+    tf.keras.layers.Dense(128, input_dim=num_palabras, activation='relu'),
     tf.keras.layers.Dense(len(clases), activation='softmax')
 ])
 modelo.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 
 # Entrenar modelo
-modelo.fit(X, Y, epochs=500, batch_size=64, verbose=1)
+modelo.fit(X, Y, epochs=600, batch_size=64, verbose=1)
 
 #guardar modelo
 modelo.save('modelo_chatbot_final.h5')
