@@ -6,118 +6,374 @@
         "Hola",
         "Buenos días",
         "Buenas tardes",
-        "Buenas noches",
-        "¿Que tal?",
-        "¿Qué hay de nuevo?"
+        "Buenas noches"
       ],
       "responses": [
         "¡Hola! ¿En qué puedo ayudarte?",
         "¡Hola! Bienvenido al servicio al cliente de nuestra empresa.",
         "Hola, ¿en qué puedo asistirte hoy?",
-        "¡Hola! Gracias por contactarnos. ¿En qué puedo ayudarte?",
-        "¡Hola! Muy bien. ¿En qué puedo asistirte hoy?",
-        "¡Hola! Nada nuevo. ¿En qué puedo asistirte hoy?"
+        "¡Hola! Gracias por contactarnos. ¿En qué puedo ayudarte?"
       ]
     },
     {
-      "tag": "despedida",
+      "tag": "presupuesto",
       "patterns": [
-        "Adiós",
-        "Hasta luego",
-        "Chao",
-        "Nos vemos",
-        "Hsta la proxima",
-        "Cuidate",
-        "Que te vaya bien",
-        "Hasta mañana"
+        "Quisiera obtener un presupuesto",
+        "Estoy buscando una computadora, ¿cuánto me costaría?",
+        "¿Cuál es el precio de sus PCs?",
+        "Me gustaría saber cuánto tendría que pagar por una computadora"
       ],
       "responses": [
-        "¡Gracias por contactarnos! Esperamos poder ayudarte de nuevo pronto.",
-        "¡Hasta luego! Que tengas un buen día.",
-        "¡Gracias a ti por confiar en nuestra empresa! Si necesitas algo más, no dudes en contactarnos.",
-        "¡Chao! Esperamos haberte brindado un buen servicio.",
-        "¡Nos vemos! Que tengas un buen día.",
-        "¡Ha sido un placer ayudarte! Si necesitas algo más, no dudes en contactarnos."
+        "Con gusto puedo ayudarte a obtener un presupuesto. ¿Podrías proporcionarme las especificaciones que estás buscando en tu PC?",
+        "Para brindarte un presupuesto adecuado, necesitaría conocer las especificaciones que deseas en tu computadora. ¿Podrías proporcionarme más detalles?",
+        "El precio de nuestras PCs varía dependiendo de las especificaciones que estés buscando. Si me das más información, podré darte un presupuesto más preciso.",
+        "Entiendo que estás interesado en obtener un presupuesto. Para brindarte la información correcta, necesitaría saber qué características y especificaciones deseas en tu computadora."
       ]
     },
     {
-      "tag": "procesador",
+      "tag": "cpu",
       "patterns": [
-        "¿Qué es un procesador?",
-        "¿Cómo funciona un procesador?",
-        "¿Qué es la velocidad del procesador?",
-        "¿Qué es la caché del procesador?",
-        "¿Qué es el núcleo de un procesador?",
-        "¿Cómo se compara la velocidad del procesador entre diferentes modelos?",
-        "¿Qué es la arquitectura del procesador?",
-        "¿Cómo puedo saber qué procesador tiene mi computadora?",
-        "¿Qué es el overclocking del procesador?",
-        "¿Cuál es la diferencia entre un procesador de gama alta y uno de gama baja?",
-        "¿Qué procesador es el mejor para juegos?",
-        "¿Qué procesador es el mejor para la edición de video o gráficos?",
-        "¿Cómo puedo saber si mi placa base es compatible con un procesador en particular?",
-        "¿Cómo puedo saber si mi placa base es compatible con un procesador en particular?",
-        "¿Qué tipo de refrigeración necesito para mi procesador?",
-        "¿Qué garantía tienen sus procesadores?",
-        "¿Cuánto tiempo tardará en enviarse mi procesador?"
+        "¿Qué tipos de CPU tienen disponibles?",
+        "Estoy buscando información sobre las CPUs que ofrecen",
+        "Quisiera saber más sobre las opciones de CPU que tienen",
+        "¿Cuáles son las características y precios de las CPUs que venden?"
       ],
       "responses": [
-        "Un procesador es un componente clave de una computadora, que se encarga de procesar las instrucciones y datos que se le envían.",
-        "El procesador recibe instrucciones y datos de la memoria y los procesa utilizando una serie de circuitos integrados. El procesador también puede realizar operaciones matemáticas y lógicas en los datos que se le envían.",
-        "La velocidad del procesador se refiere a la cantidad de ciclos de reloj que se pueden realizar por segundo. Se mide en gigahertzios (GHz) y es una medida de la velocidad a la que puede procesar los datos.",
-        "La caché es una memoria integrada en el procesador que almacena datos frecuentemente utilizados para que puedan accederse rápidamente. Esto ayuda a mejorar la velocidad de procesamiento.",
-        "El núcleo de un procesador es la unidad de procesamiento central que contiene la unidad de control y la unidad aritmética lógica. Los procesadores modernos tienen múltiples núcleos que les permiten realizar varias tareas al mismo tiempo.",
-        "La velocidad del procesador se mide en GHz, por lo que cuanto mayor sea la velocidad, más rápido será el procesador. Sin embargo, también hay otros factores que influyen en la velocidad, como el número de núcleos y la caché.",
-        "La arquitectura del procesador se refiere a cómo está diseñado el procesador y cómo se realizan las operaciones. Los procesadores de diferentes fabricantes pueden tener arquitecturas diferentes.",
-        "Puede buscar en las especificaciones de su computadora o utilizar herramientas de diagnóstico de hardware para determinar el modelo y la velocidad del procesador. También puede ver esta información en la configuración del sistema operativo de su computadora.",
-        "El overclocking es el proceso de aumentar la velocidad del procesador más allá de la velocidad recomendada por el fabricante. Aunque puede mejorar la velocidad de la computadora, también puede dañar el procesador y anular la garantía.",
-        "Los procesadores de gama alta tienen una velocidad de reloj más alta y más núcleos, lo que les permite procesar más datos y realizar tareas más complejas. Los procesadores de gama baja son menos potentes y tienen menos características, pero son más económicos.",
-        "Los procesadores de gama alta con varios núcleos y una alta velocidad de reloj son los mejores para juegos. En particular, los procesadores de la serie Intel Core i7 o i9 y los procesadores de la serie AMD Ryzen son muy populares entre los jugadores.",
-        "Para la edición de video o gráficos, los procesadores con múltiples núcleos y una alta velocidad de reloj son los mejores. Los procesadores de la serie Intel Core i9 o los procesadores de la serie AMD Ryzen Threadripper son muy populares entre los profesionales de la edición de video y gráficos.",
-        "El socket necesario para el procesador depende del modelo del procesador y de la placa base que esté utilizando. Los procesadores de diferentes fabricantes tienen diferentes tipos de sockets, por lo que es importante asegurarse de que el procesador sea compatible con la placa base antes de comprarlo.",
-        "La información sobre la compatibilidad del procesador suele estar disponible en las especificaciones de la placa base. También puede utilizar herramientas de diagnóstico de hardware para determinar la compatibilidad.",
-        "La refrigeración necesaria para el procesador depende del modelo del procesador y de la cantidad de calor que produce. Los procesadores más potentes suelen necesitar un sistema de refrigeración más potente, como un enfriador de aire o líquido.",
-        "La garantía de los procesadores puede variar dependiendo del fabricante. La mayoría de los procesadores tienen una garantía de al menos un año, y algunos fabricantes ofrecen garantías extendidas.",
-        "El tiempo de envío depende de la ubicación del cliente y de la disponibilidad del procesador. La mayoría de los procesadores se envían dentro de los 2 a 3 días hábiles posteriores a la compra, pero esto puede variar dependiendo del proveedor."
+        "Tenemos diferentes opciones de CPU disponibles, incluyendo Intel Core i5, i7 y i9, así como procesadores AMD Ryzen. ¿Te gustaría saber más detalles sobre alguna de estas opciones en particular?",
+        "Ofrecemos una variedad de CPUs, desde modelos de gama baja hasta los más avanzados. ¿Hay alguna marca o modelo específico que te interese?",
+        "Nuestras opciones de CPU incluyen diferentes modelos de Intel y AMD. Cada uno tiene sus propias características y precios. ¿Tienes alguna preferencia en cuanto a marca o rendimiento?",
+        "Podemos ofrecerte diferentes opciones de CPU para tu computadora. ¿Tienes alguna preferencia en cuanto a marca, rendimiento o presupuesto?"
       ]
     },
     {
-      "tag": "especificaciones_cliente",
+      "tag": "ram",
       "patterns": [
-        "necesito un computador barato",
-        "necesito un computador potente pero no tan caro",
-        "necesito un computador potente",
-        "vendes computadores usados?",
-        "necesito un computador para programar",
-        "necesito un computador para editar",
-        "necesito un computador para estudiar",
-        "como saber las especificaciones que necesito para lo que voy a hacer",
-        "tengo poco dinero, que computador podria comprar"
+        "¿Qué opciones de memoria RAM tienen?",
+        "Estoy interesado en las opciones de RAM que ofrecen",
+        "Quisiera saber más sobre las características de la memoria RAM que venden",
+        "¿Cuáles son los precios de la memoria RAM que tienen?"
       ],
       "responses": [
-        "Te puedo recomendar un computador de gama baja, suelen ser economicos",
-        "Te podria recomendar un computador de gama media, suelen ser algo economicos y potentes",
-        "Te podria recomendar un computador de gama alta, aunque son algo caros pero son muy potentes",
-        "Solamente vendemos computadores nuevos",
-        "Para programar Dependiendo de lo que vayas a programar podrias necesitar un computador mas potente o no, pero un computador de gama baja puede ser suficiente para programar",
-        "Para editar videos necesitas un computador de gama alta, con una buena tarjeta grafica y un procesador potente",
-        "Dependiendo que vayas a estudiar necesitas un computador mas potente o no, pero probablemente para la mayoria de casos de estudio un computador dea baja puede ser suficiente",
-        "Puedes decirme para que vas a utilizar el computador y aconsejarte en base a eso",
-        "Te puedo recomendar un computador de gama baja, estos computadores son economicos"
+        "Disponemos de una variedad de opciones de memoria RAM, desde módulos de 8GB hasta 32GB y más. ¿Necesitas una cantidad específica de RAM o tienes alguna preferencia en cuanto a marca?",
+        "Ofrecemos diferentes tipos y capacidades de memoria RAM para adaptarnos a tus necesidades. ¿Hay alguna preferencia en cuanto a velocidad o cantidad de RAM que estás buscando?",
+        "Nuestras opciones de memoria RAM incluyen diferentes capacidades y velocidades. ¿Tienes alguna preferencia en cuanto a marca, capacidad o rendimiento?",
+        "Podemos proporcionarte opciones de memoria RAM de diferentes capacidades y marcas. Si puedes darme más detalles sobre tus necesidades, podré ofrecerte las mejores opciones y precios."
       ]
     },
     {
-      "tag": "precio",
+      "tag": "disco_duro",
       "patterns": [
-        "cuanto vale",
-        "el computador",
-        "lo necesito para estudiar"
+        "¿Cuáles son las opciones de disco duro que ofrecen?",
+        "Estoy buscando información sobre los tipos de disco duro que tienen",
+        "Quisiera saber más sobre las características de los discos duros que venden",
+        "¿Cuáles son los precios de los discos duros que tienen?"
       ],
       "responses": [
-        "Que cosa?",
-        "Para que necesitas el computador?",
-        "te podria recomendar recomendar un computador barat0"
+        "Tenemos diferentes opciones de disco duro disponibles, incluyendo discos duros tradicionales (HDD) y unidades de estado sólido (SSD). ¿Hay algún tipo o capacidad específica que te interese?",
+        "Ofrecemos una variedad de discos duros, desde modelos HDD convencionales hasta unidades SSD de alto rendimiento. ¿Tienes alguna preferencia en cuanto a capacidad o velocidad?",
+        "Nuestras opciones de disco duro incluyen diferentes capacidades y tipos. Si tienes alguna preferencia en cuanto a marca, capacidad o rendimiento, estaré encantado de ayudarte a encontrar la opción adecuada.",
+        "Podemos proporcionarte diferentes opciones de disco duro, tanto HDD como SSD, con diversas capacidades y velocidades. Si puedes darme más información sobre tus necesidades, podré ofrecerte las mejores opciones y precios."
       ]
-    }
+    },
+    {
+      "tag": "tarjeta_grafica",
+      "patterns": [
+        "¿Qué opciones de tarjeta gráfica tienen disponibles?",
+        "Estoy buscando información sobre las tarjetas gráficas que ofrecen",
+        "Quisiera saber más sobre las características de las tarjetas gráficas que venden",
+        "¿Cuáles son los precios de las tarjetas gráficas que tienen?"
+      ],
+      "responses": [
+        "Disponemos de diferentes opciones de tarjetas gráficas, desde modelos de gama baja hasta los más potentes para juegos y diseño gráfico. ¿Hay alguna marca o modelo específico que te interese?",
+        "Ofrecemos una variedad de tarjetas gráficas, tanto de Nvidia como de AMD. ¿Tienes alguna preferencia en cuanto a marca, rendimiento o capacidad de procesamiento?",
+        "Nuestras opciones de tarjetas gráficas incluyen diferentes modelos con distintas capacidades de procesamiento gráfico. ¿Hay alguna preferencia en cuanto a marca, rendimiento o presupuesto?",
+        "Podemos proporcionarte diferentes opciones de tarjetas gráficas, desde modelos básicos hasta los más avanzados. Si puedes darme más detalles sobre tus necesidades, podré ofrecerte las mejores opciones y precios."
+      ]
+    },
+    {
+      "tag": "gabinete",
+      "patterns": [
+        "¿Cuáles son las opciones de gabinete que ofrecen?",
+        "Estoy buscando información sobre los tipos de gabinetes que tienen",
+        "Quisiera saber más sobre las características de los gabinetes que venden",
+        "¿Cuáles son los precios de los gabinetes que tienen?"
+      ],
+      "responses": [
+        "Tenemos diferentes opciones de gabinetes disponibles, incluyendo modelos con diferentes tamaños, diseños y características. ¿Tienes alguna preferencia en cuanto a tamaño, color o características especiales?",
+        "Ofrecemos una variedad de gabinetes para adaptarnos a diferentes necesidades. ¿Estás buscando un gabinete con un diseño específico, opciones de enfriamiento o espacio para futuras expansiones?",
+        "Nuestras opciones de gabinetes incluyen diferentes marcas, tamaños y diseños. Si puedes darme más información sobre tus preferencias, podré ofrecerte las mejores opciones y precios.",
+        "Podemos proporcionarte diferentes opciones de gabinetes, desde modelos básicos hasta los más avanzados con opciones de gestión de cables, ventilación y capacidad de expansión. Si tienes alguna preferencia específica, estaré encantado de ayudarte a encontrar el gabinete adecuado."
+      ]
+    },
+    {
+      "tag": "fuente_poder",
+      "patterns": [
+        "¿Cuáles son las opciones de fuente de poder que ofrecen?",
+        "Estoy buscando información sobre los tipos de fuentes de poder que tienen",
+        "Quisiera saber más sobre las características de las fuentes de poder que venden",
+        "¿Cuáles son los precios de las fuentes de poder que tienen?"
+      ],
+      "responses": [
+        "Disponemos de diferentes opciones de fuentes de poder, desde modelos estándar hasta opciones de alta eficiencia y potencia. ¿Tienes alguna preferencia en cuanto a marca, capacidad o características?",
+        "Ofrecemos una variedad de fuentes de poder para adaptarnos a diferentes configuraciones y necesidades. ¿Estás buscando una fuente de poder con una capacidad específica o características de eficiencia energética?",
+        "Nuestras opciones de fuentes de poder incluyen diferentes marcas y capacidades. Si tienes alguna preferencia en cuanto a marca, rendimiento o presupuesto, estaré encantado de ayudarte a encontrar la opción adecuada.",
+        "Podemos proporcionarte diferentes opciones de fuentes de poder, desde modelos estándar hasta opciones de alta eficiencia y capacidad de entrega de energía. Si puedes darme más detalles sobre tus necesidades, podré ofrecerte las mejores opciones y precios."
+      ]
+    },
+    {
+      "tag": "monitor",
+      "patterns": [
+        "¿Qué opciones de monitor tienen disponibles?",
+        "Estoy buscando información sobre los tipos de monitores que tienen",
+        "Quisiera saber más sobre las características de los monitores que venden",
+        "¿Cuáles son los precios de los monitores que tienen?"
+      ],
+      "responses": [
+        "Tenemos diferentes opciones de monitores disponibles, incluyendo monitores de diferentes tamaños, resoluciones y frecuencias de actualización. ¿Tienes alguna preferencia en cuanto a tamaño, resolución o características especiales?",
+        "Ofrecemos una variedad de monitores, desde modelos estándar hasta opciones para juegos y diseño gráfico. ¿Estás buscando un monitor con una resolución o frecuencia de actualización específica?",
+        "Nuestras opciones de monitores incluyen diferentes marcas, tamaños y características. Si tienes alguna preferencia en cuanto a marca, tamaño, resolución o presupuesto, podré ofrecerte las mejores opciones y precios.",
+        "Podemos proporcionarte diferentes opciones de monitores, desde modelos básicos hasta opciones de alta resolución y frecuencia de actualización para una experiencia visual más inmersiva. Si puedes darme más detalles sobre tus necesidades, podré ofrecerte las mejores opciones y precios."
+      ]
+    },
+    {
+      "tag": "perifericos",
+      "patterns": [
+        "¿Qué periféricos tienen disponibles?",
+        "Estoy buscando información sobre los periféricos que ofrecen",
+        "Quisiera saber más sobre las características de los periféricos que venden",
+        "¿Cuáles son los precios de los periféricos que tienen?"
+      ],
+      "responses": [
+        "Tenemos una amplia gama de periféricos disponibles, incluyendo teclados, ratones, auriculares y más. ¿Hay algún tipo de periférico en particular que estés buscando?",
+        "Ofrecemos diferentes opciones de periféricos para complementar tu experiencia de uso. ¿Estás interesado en periféricos para juegos, ergonómicos o de uso general?",
+        "Nuestras opciones de periféricos incluyen marcas reconocidas y opciones con características especiales. Si puedes darme más información sobre tus preferencias o necesidades, podré ofrecerte las mejores opciones y precios.",
+        "Podemos proporcionarte una variedad de periféricos, desde teclados y ratones hasta auriculares y controladores. Si puedes darme más detalles sobre el tipo de periférico que estás buscando o tus preferencias, podré ofrecerte las mejores opciones y precios."
+      ]
+    },
+    {
+      "tag": "tarjeta_madre",
+      "patterns": [
+        "¿Qué información tienen sobre las tarjetas madre?",
+        "Estoy buscando información sobre las tarjetas madre que ofrecen",
+        "Quisiera saber más sobre las características de las tarjetas madre que venden",
+        "¿Cuáles son los precios de las tarjetas madre que tienen?"
+      ],
+      "responses": [
+        "Las tarjetas madre que ofrecemos incluyen diferentes marcas y modelos con distintas características. ¿Tienes alguna preferencia en cuanto a marca, compatibilidad o características específicas?",
+        "Ofrecemos una variedad de tarjetas madre para adaptarnos a diferentes necesidades. ¿Estás buscando una tarjeta madre con soporte para overclocking, compatibilidad con procesadores específicos o características especiales?",
+        "Nuestras opciones de tarjetas madre incluyen diferentes marcas y modelos con distintas capacidades de expansión, conectividad y soporte para componentes. Si puedes darme más información sobre tus necesidades o preferencias, podré ofrecerte las mejores opciones y precios.",
+        "Podemos proporcionarte diferentes opciones de tarjetas madre, desde modelos básicos hasta opciones de alto rendimiento y características avanzadas. Si puedes darme más detalles sobre tus necesidades o preferencias, podré ofrecerte las mejores opciones y precios."
+      ]
+    },
+    {
+      "tag": "disipacion_calor",
+      "patterns": [
+        "¿Cuáles son las opciones de sistemas de disipación de calor que ofrecen?",
+        "Estoy buscando información sobre los sistemas de enfriamiento que tienen",
+        "Quisiera saber más sobre las características de los sistemas de disipación de calor que venden",
+        "¿Cuáles son los precios de los sistemas de disipación de calor que tienen?"
+      ],
+      "responses": [
+        "Tenemos diferentes opciones de sistemas de disipación de calor disponibles, incluyendo soluciones de enfriamiento por aire y sistemas de refrigeración líquida. ¿Tienes alguna preferencia en cuanto a rendimiento, ruido o presupuesto?",
+        "Ofrecemos una variedad de sistemas de disipación de calor para adaptarnos a diferentes configuraciones y necesidades. ¿Estás buscando un sistema de enfriamiento específico para overclocking o un funcionamiento más silencioso?",
+        "Nuestras opciones de sistemas de disipación de calor incluyen marcas reconocidas y soluciones con características especiales. Si puedes darme más información sobre tus necesidades o preferencias, podré ofrecerte las mejores opciones y precios.",
+        "Podemos proporcionarte diferentes opciones de sistemas de disipación de calor, desde soluciones de enfriamiento por aire eficientes hasta sistemas de refrigeración líquida avanzados. Si puedes darme más detalles sobre tus necesidades o preferencias, podré ofrecerte las mejores opciones y precios."
+      ]
+    },
+    {
+      "tag": "sistema_operativo",
+      "patterns": [
+        "¿Qué opciones de sistemas operativos preinstalados tienen?",
+        "Estoy buscando información sobre los sistemas operativos que ofrecen",
+        "Quisiera saber más sobre las características de los sistemas operativos preinstalados que venden",
+        "¿Cuáles son los precios de los sistemas operativos preinstalados que tienen?"
+      ],
+      "responses": [
+        "Ofrecemos una variedad de sistemas operativos preinstalados, incluyendo Windows, macOS y diferentes distribuciones de Linux. ¿Tienes alguna preferencia en cuanto al sistema operativo o versión específica?",
+        "Nuestras opciones de sistemas operativos preinstalados incluyen diferentes versiones de Windows, macOS y distribuciones de Linux. Si puedes darme más información sobre tus preferencias o necesidades, podré ofrecerte las mejores opciones y precios.",
+        "Tenemos diferentes opciones de sistemas operativos preinstalados disponibles, desde versiones de Windows actualizadas hasta opciones de software libre como Linux. Si tienes alguna preferencia en cuanto al sistema operativo o características específicas, estaré encantado de ayudarte a encontrar la opción adecuada.",
+        "Podemos proporcionarte diferentes opciones de sistemas operativos preinstalados, tanto para usuarios de Windows como de macOS o Linux. Si puedes darme más detalles sobre tus necesidades o preferencias, podré ofrecerte las mejores opciones y precios."
+      ]
+    },
+    {
+      "tag": "programas_preinstalados",
+      "patterns": [
+        "¿Qué programas preinstalados tienen disponibles?",
+        "Estoy buscando información sobre los programas preinstalados que ofrecen",
+        "Quisiera saber más sobre los programas preinstalados que venden",
+        "¿Cuáles son los precios de los programas preinstalados que tienen?"
+      ],
+      "responses": [
+        "Ofrecemos una selección de programas preinstalados para satisfacer diferentes necesidades y perfiles de usuario. ¿Estás buscando programas específicos para tareas como edición de fotos, diseño gráfico o productividad?",
+        "Nuestras opciones de programas preinstalados incluyen aplicaciones de productividad, suites de diseño y software de entretenimiento. Si puedes darme más información sobre tus necesidades o preferencias, podré ofrecerte las mejores opciones y precios.",
+        "Tenemos diferentes programas preinstalados disponibles, desde suites de productividad hasta software de diseño y entretenimiento. Si tienes alguna preferencia en cuanto a programas específicos o necesidades particulares, estaré encantado de ayudarte a encontrar la opción adecuada.",
+        "Podemos proporcionarte una variedad de programas preinstalados, desde herramientas de productividad hasta software creativo y de entretenimiento. Si puedes darme más detalles sobre tus necesidades o preferencias, podré ofrecerte las mejores opciones y precios."
+      ]
+    },
+    {
+      "tag": "otros_productos",
+      "patterns": [
+        "¿Qué otros productos venden además de computadoras?",
+        "Estoy interesado en conocer otros productos que venden",
+        "Quisiera saber más sobre los productos adicionales que ofrecen",
+        "¿Tienen otros productos disponibles aparte de las computadoras?"
+      ],
+      "responses": [
+        "Además de computadoras, ofrecemos una amplia gama de productos electrónicos, como dispositivos móviles, tablets, accesorios y componentes de computadoras. ¿Hay algo en particular que te interese?",
+        "Nuestro catálogo incluye otros productos electrónicos, como dispositivos móviles, tablets, impresoras, dispositivos de almacenamiento y más. Si tienes alguna preferencia o necesitas información sobre un producto específico, estaré encantado de ayudarte.",
+        "Tenemos disponibles varios productos adicionales, como dispositivos móviles, tablets, periféricos, impresoras y más. Si estás buscando algo en particular o necesitas información detallada sobre un producto específico, no dudes en preguntarme.",
+        "Además de computadoras, ofrecemos una variedad de productos electrónicos, incluyendo dispositivos móviles, tablets, accesorios y más. Si hay algo en lo que estés interesado o necesitas más información, estaré encantado de ayudarte."
+      ]
+    },
+    {
+      "tag": "solicitar_informacion",
+      "patterns": [
+        "¿Puedo obtener más información?",
+        "Necesito más detalles sobre los productos",
+        "¿Me podrías proporcionar más información?",
+        "Quisiera conocer más detalles sobre lo que ofrecen"
+      ],
+      "responses": [
+        "Por supuesto, estaré encantado de proporcionarte más información. ¿Hay algo en particular sobre lo que te gustaría saber más?",
+        "Claro, puedo brindarte información adicional sobre nuestros productos y servicios. Si tienes alguna pregunta específica o necesitas detalles sobre algo en particular, no dudes en preguntar.",
+        "¡Por supuesto! Estoy aquí para ayudarte y proporcionarte la información que necesites. Si tienes alguna pregunta en particular o deseas más detalles sobre algo en específico, no dudes en preguntar.",
+        "¡Absolutamente! Si hay algo en particular sobre lo que te gustaría obtener más información, estaré encantado de ayudarte. Solo dime qué necesitas saber y te brindaré todos los detalles que pueda."
+      ]
+    },
+    {
+      "tag": "ubicacion",
+      "patterns": [
+        "¿Dónde están ubicados?",
+        "¿Cuál es su dirección?",
+        "Quisiera saber la ubicación de su tienda",
+        "¿Dónde puedo encontrarlos?"
+      ],
+      "responses": [
+        "Nuestra tienda está ubicada en [Dirección de la tienda]. Estamos convenientemente ubicados en [Ciudad, País]. Si necesitas indicaciones más precisas o detalles adicionales, por favor avísame.",
+        "Nos encontramos en [Dirección de la tienda], en [Ciudad, País]. Estamos ubicados en una zona de fácil acceso y contamos con estacionamiento disponible. Si necesitas más información o indicaciones detalladas, estaré encantado de ayudarte.",
+        "Estamos ubicados en [Dirección de la tienda], en [Ciudad, País]. Nuestra tienda se encuentra en una zona céntrica y de fácil acceso. Si necesitas direcciones precisas o información adicional, no dudes en preguntarme.",
+        "Puedes encontrarnos en [Dirección de la tienda], en [Ciudad, País]. Estamos convenientemente ubicados y nuestra tienda cuenta con un ambiente acogedor. Si necesitas más detalles o indicaciones específicas, estaré encantado de asistirte."
+      ]
+    },
+    {
+      "tag": "nombre_empresa",
+      "patterns": [
+        "¿Cuál es el nombre de su empresa?",
+        "¿Cómo se llama su empresa?",
+        "Quisiera saber el nombre de su compañía",
+        "¿Cuál es el nombre de su tienda?"
+      ],
+      "responses": [
+        "El nombre de nuestra empresa es [Nombre de la empresa]. Nos enorgullece ofrecer productos y servicios de alta calidad a nuestros clientes. Si tienes alguna otra pregunta o necesitas más información, no dudes en preguntar.",
+        "Nuestra empresa se llama [Nombre de la empresa]. Estamos comprometidos en brindar soluciones tecnológicas de vanguardia y un excelente servicio al cliente. Si hay algo más en lo que pueda ayudarte, no dudes en decírmelo.",
+        "Nosotros somos [Nombre de la empresa]. Como empresa dedicada al mundo de la tecnología, nos esforzamos por ofrecer productos innovadores y satisfacer las necesidades de nuestros clientes. Si necesitas más detalles o tienes alguna pregunta adicional, estaré encantado de ayudarte.",
+        "El nombre de nuestra tienda es [Nombre de la empresa]. Trabajamos arduamente para brindar productos y servicios de calidad a nuestros clientes. Si tienes alguna otra pregunta o necesitas más información, no dudes en preguntar."
+      ]
+    },
+    {
+      "tag": "servicio_domicilio",
+      "patterns": [
+        "¿Ofrecen servicio a domicilio?",
+        "¿Tienen servicio de entrega?",
+        "Quisiera saber si hacen envíos",
+        "¿Hacen entregas a domicilio?"
+      ],
+      "responses": [
+        "Sí, ofrecemos servicio a domicilio. Realizamos entregas en [Ciudad, País] y las áreas cercanas. Si deseas realizar una compra y necesitas el servicio de entrega, por favor avísame y te proporcionaré más detalles.",
+        "¡Claro! Contamos con servicio de entrega a domicilio. Podemos enviar los productos a tu dirección en [Ciudad, País] y sus alrededores. Si necesitas más información sobre el servicio de entrega o tienes alguna pregunta adicional, no dudes en preguntar.",
+        "Sí, ofrecemos servicio de entrega a domicilio. Podemos enviar los productos directamente a tu dirección en [Ciudad, País] para mayor comodidad. Si tienes alguna pregunta o necesitas más detalles sobre nuestro servicio de entrega, estaré encantado de asistirte.",
+        "Absolutamente, ofrecemos servicio a domicilio para que puedas recibir los productos en la comodidad de tu hogar. Si necesitas más información sobre el servicio de entrega o tienes alguna pregunta adicional, no dudes en preguntar."
+      ]
+    },
+    {
+      "tag": "promociones_descuentos",
+      "patterns": [
+        "¿Tienen promociones o descuentos especiales?",
+        "Quisiera conocer las promociones vigentes",
+        "¿Hacen descuentos en los productos?",
+        "¿Tienen ofertas especiales?"
+      ],
+      "responses": [
+        "Sí, regularmente ofrecemos promociones y descuentos especiales en nuestros productos. Te recomiendo visitar nuestra página web o tienda física para conocer las promociones vigentes. ¿Hay algo en particular que te interese?",
+        "Constantemente tenemos promociones y descuentos especiales en nuestros productos. Puedes consultar nuestras ofertas en nuestra página web o visitar nuestra tienda para obtener más detalles. Si tienes alguna pregunta específica, estaré encantado de ayudarte.",
+        "Sí, ofrecemos promociones y descuentos especiales en diferentes momentos del año. Te sugiero visitar nuestra página web o ponerte en contacto con nosotros para conocer las promociones vigentes. Si necesitas más información o tienes alguna pregunta adicional, no dudes en preguntar.",
+        "¡Por supuesto! Siempre tenemos promociones y descuentos especiales disponibles en algunos de nuestros productos. Te recomendaría visitar nuestra página web o contactarnos directamente para obtener más detalles sobre las ofertas actuales."
+      ]
+    },
+    {
+      "tag": "garantias_devoluciones",
+      "patterns": [
+        "¿Qué tipo de garantía ofrecen en sus productos?",
+        "Quisiera saber más sobre las garantías que ofrecen",
+        "¿Tienen política de devoluciones?",
+        "¿Cómo funciona el proceso de garantía?"
+      ],
+      "responses": [
+        "Nuestros productos cuentan con una garantía estándar de [número de meses o años], la cual cubre defectos de fabricación y funcionamiento. Si surge algún problema durante el período de garantía, estaremos encantados de ayudarte a solucionarlo. Si deseas más información sobre nuestra política de garantía o devoluciones, por favor avísame.",
+        "Todos nuestros productos están respaldados por una garantía de calidad. Dependiendo del producto, ofrecemos garantías que varían en duración. Si tienes alguna pregunta específica sobre la garantía de un producto en particular o sobre nuestra política de devoluciones, estaré encantado de brindarte más detalles.",
+        "Nos enorgullece ofrecer garantía en todos nuestros productos. Cada producto tiene una garantía específica que cubre posibles defectos de fabricación o funcionamiento. Si tienes alguna pregunta sobre la garantía de un producto en particular o sobre nuestra política de devoluciones, no dudes en preguntar.",
+        "Nuestros productos vienen con una garantía estándar que cubre defectos de fabricación y funcionamiento. Si tienes algún problema durante el período de garantía, estaremos aquí para ayudarte. Para más detalles sobre nuestra política de garantía o devoluciones, no dudes en preguntar."
+      ]
+    },
+    {
+      "tag": "soporte_tecnico",
+      "patterns": [
+        "¿Tienen servicio de soporte técnico?",
+        "Quisiera saber si ofrecen soporte técnico",
+        "¿Cómo puedo obtener soporte técnico?",
+        "¿Tienen servicio de asistencia técnica?"
+      ],
+      "responses": [
+        "Sí, ofrecemos servicio de soporte técnico para ayudarte con cualquier consulta o problema relacionado con nuestros productos. Puedes comunicarte con nuestro equipo de soporte técnico al [número de teléfono] o enviar un correo electrónico a [dirección de correo electrónico]. Estaremos encantados de asistirte.",
+        "Claro, contamos con un equipo de soporte técnico dedicado para ayudarte con cualquier problema o consulta que puedas tener. Puedes comunicarte con nuestro equipo al [número de teléfono] o enviarnos un correo electrónico a [dirección de correo electrónico]. Estamos aquí para brindarte la asistencia que necesitas.",
+        "Nos enorgullece ofrecer servicio de soporte técnico a nuestros clientes. Si necesitas asistencia o tienes alguna pregunta técnica, puedes contactar a nuestro equipo de soporte al [número de teléfono] o enviar un correo electrónico a [dirección de correo electrónico]. Estaremos encantados de ayudarte.",
+        "Sí, tenemos servicio de soporte técnico disponible. Si necesitas asistencia o tienes alguna pregunta relacionada con nuestros productos, puedes comunicarte con nuestro equipo de soporte al [número de teléfono] o enviarnos un correo electrónico a [dirección de correo electrónico]. Estamos aquí para ayudarte en lo que necesites."
+      ]
+    },
+    {
+      "tag": "contacto_adicional",
+      "patterns": [
+        "¿Cómo puedo contactarlos?",
+        "Quisiera obtener información de contacto adicional",
+        "¿Tienen otros medios de contacto?",
+        "¿Cómo puedo comunicarme con ustedes?"
+      ],
+      "responses": [
+        "Puedes contactarnos llamando al [número de teléfono] durante nuestro horario de atención al cliente. También puedes enviarnos un correo electrónico a [dirección de correo electrónico]. Si prefieres visitarnos en persona, nuestra tienda está ubicada en [Dirección de la tienda]. Estaremos encantados de atender tus consultas.",
+        "Para contactarnos, puedes llamar a nuestro número de atención al cliente: [número de teléfono]. Si prefieres comunicarte por correo electrónico, puedes escribirnos a [dirección de correo electrónico]. Estamos disponibles para responder tus preguntas y brindarte la información que necesites.",
+        "Puedes comunicarte con nosotros de diferentes maneras. Si deseas hablar directamente con nuestro equipo, puedes llamarnos al [número de teléfono]. También puedes enviarnos un correo electrónico a [dirección de correo electrónico] o visitar nuestra tienda en [Dirección de la tienda]. Estamos aquí para ayudarte en lo que necesites.",
+        "Si necesitas contactarnos, puedes llamar a nuestro número de atención al cliente: [número de teléfono]. También puedes enviarnos un correo electrónico a [dirección de correo electrónico]. Estamos disponibles para responder tus preguntas y proporcionarte la asistencia que necesitas."
+      ]
+    },
+    {
+      "tag": "consultas_generales",
+      "patterns": [
+        "¿Puedes ayudarme con otra consulta?",
+        "Tengo una pregunta que no tiene que ver con las computadoras",
+        "Quisiera hacer otra pregunta",
+        "¿Puedo hacerte otra consulta?"
+      ],
+      "responses": [
+        "Por supuesto, estaré encantado de ayudarte con cualquier otra consulta que tengas. No dudes en preguntar, ¡estoy aquí para asistirte!",
+        "¡Claro! Si tienes alguna otra pregunta o necesitas información adicional, no dudes en decírmelo. Estoy aquí para ayudarte en lo que necesites.",
+        "Por supuesto, puedes hacerme otra consulta. Estoy aquí para brindarte la información que necesitas y resolver tus dudas.",
+        "¡Por supuesto! Estoy aquí para responder todas tus preguntas, incluso si no están relacionadas específicamente con las computadoras. Adelante, pregúntame lo que necesites."
+      ]
+    },
+    {
+      "tag": "respuesta_corta",
+      "patterns": [
+        "No entendí",
+        "No comprendo",
+        "No estoy seguro",
+        "Necesito más información"
+      ],
+      "responses": [
+        "Disculpa, parece que no entendí completamente. ¿Podrías proporcionar más detalles?",
+        "Lo siento, no tengo información suficiente para responder. ¿Podrías brindar más detalles?",
+        "No estoy seguro de haber comprendido completamente tu pregunta. ¿Podrías ser más específico?",
+        "Para ayudarte de manera precisa, necesitaría más información. ¿Podrías proporcionar más detalles?"
+      ]
+    }    
   ]
 }
